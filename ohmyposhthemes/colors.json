@@ -1,0 +1,23 @@
+        {
+            "background": "#1E1E1E",
+            "black": "#000000",
+            "blue": "#0000AA",
+            "brightBlack": "#545454",
+            "brightBlue": "#5454FF",
+            "brightCyan": "#54FFFF",
+            "brightGreen": "#54FF54",
+            "brightPurple": "#FF54FF",
+            "brightRed": "#FF5454",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFFF54",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#00AAAA",
+            "foreground": "#FFFFFF",
+            "green": "#00AA00",
+            "name": "default Linux",
+            "purple": "#AA00AA",
+            "red": "#AA0000",
+            "selectionBackground": "#FFFFFF",
+            "white": "#AAAAAA",
+            "yellow": "#AA5400"
+        }
