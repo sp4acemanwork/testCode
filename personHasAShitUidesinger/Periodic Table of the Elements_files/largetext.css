@@ -1,0 +1,86 @@
+
+@font-face
+{
+	font-family:"Free Sans", FreeSans;
+	url(gnueFont/FreeSans.ttf) format(`truetype`);
+
+}
+
+* { 
+	font-family : FreeSans;
+}
+html, body, form, fieldset, table, tr, td, img {
+    margin: 0;
+    padding: 0;
+    font: 100%/150% FreeSans;
+}
+
+input, button, select, textarea, optgroup, option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+/* rest of your styles; like: */
+
+#positioning_div {
+   width:10.8em;
+   z-index:3000;
+}
+
+.nofocus {
+   border-color: #CEBDA6;
+}
+
+
+.infocus {
+   border-color: #FFD318;
+}
+
+.instructions {
+   //background-color: #FFD318;
+   color: #000000;
+   display: block;
+   margin: 0;
+   font-size: .37em;
+   border-top:1px solid #000000;
+   font-family:FreeSans;
+}
+
+#largetext_unique_987654321 div {
+	border-style: solid none;
+   border-width: thin;
+   margin: 4px;
+   padding: 0px;
+   width: 95%;
+}
+.largetext1 {	
+	border-color: black;
+	font-size: 14pt;
+   line-height: 14pt;
+   	font-family:Arial;
+	font-weight: bold;
+   color: green;
+}
+.largetext2 {
+	border-color: black;
+	font-size: 18pt;
+   line-height: 18pt;
+   color: cyan;
+}
+.largetext3 {
+    border-color: #D1D1DC;
+    font-size: 14pt;
+    line-height: 14pt;
+	 font-weight: bold;
+    color: red;
+}
+.largetext4 {
+	 border-color: #D1D1DC;
+    font-size: 18pt;
+    line-height: 18pt;
+    color: yellow;
+}
+
+

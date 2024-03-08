@@ -1,0 +1,149 @@
+
+
+    //this is actually a table
+    window.scalediv = document.getElementById('positioning_div');
+    scalediv.setAttribute('tabindex','0');
+    scalediv.setAttribute('onfocus','beginMove();');
+    scalediv.setAttribute('onblur','endMove();');
+    scalediv.setAttribute('onkeydown','return MoveOrChangeSteps(event,scalediv);');
+    scalediv.setAttribute('onmouseup','scalediv.focus();');
+
+
+
+    //create instructions
+
+         window.mydiv5 = document.createElement('div');
+         window.mydiv5.setAttribute('class','instructions');
+         var mytext5 = document.createTextNode('Drag or use arrow keys to move. Press 1-4 to change step size.');
+         
+         window.mydiv5.appendChild(mytext5);
+
+    scalediv.className = 'nofocus';
+    var stepsize=150;
+
+
+
+
+function beginMove() {
+    
+    window.scalediv.className = 'infocus';
+    // get it inside the td, since scalediv is a table
+    window.scalediv.childNodes[0].childNodes[0].childNodes[0].appendChild(mydiv5);
+    window.scalediv.childNodes[0].childNodes[0].childNodes[0].style.border='2px solid black';
+
+}
+function endMove() {
+    window.scalediv.className = 'nofocus';
+    window.scalediv.childNodes[0].childNodes[0].childNodes[0].removeChild(mydiv5);
+    window.scalediv.childNodes[0].childNodes[0].childNodes[0].style.border='1px solid black';
+}
+
+
+function MoveOrChangeSteps(e,o) {
+   var keyis;
+   if(window.event) // IE
+        {
+        keyis = e.keyCode;
+        }
+   else if(e.which) // Netscape/Firefox/Opera
+        {
+        keyis = e.which;
+        }
+
+
+var winW = 630, winH = 460;
+if (document.body && document.body.offsetWidth) {
+ winW = document.body.offsetWidth;
+ winH = document.body.offsetHeight;
+}
+if (document.compatMode=='CSS1Compat' &&
+    document.documentElement &&
+    document.documentElement.offsetWidth ) {
+ winW = document.documentElement.offsetWidth;
+ winH = document.documentElement.offsetHeight;
+}
+if (window.innerWidth && window.innerHeight) {
+ winW = window.innerWidth;
+ winH = window.innerHeight;
+}
+//winW and winH stuff from http://www.javascripter.net/faq/browserw.htm
+
+//some variables for the key handling
+   var newleft;
+   var newtop;
+   var rightlim;
+   var blim;
+
+//keys to change the step size
+   if(keyis=='49') {
+
+        window.mydiv5.innerHTML="Drag or use arrow keys to move in <strong>tiny</strong> steps. Press 1-4 to change step size.";
+        stepsize=1;
+
+   } else if (keyis=='50') {
+        window.mydiv5.innerHTML="Drag or use arrow keys to move in <strong>small</strong> steps. Press 1-4 to change step size.";
+        stepsize=50;
+
+   } else if (keyis=='51') {
+        window.mydiv5.innerHTML="Drag or use arrow keys to move in <strong>medium</strong> steps. Press 1-4 to change step size.";
+        stepsize=150;
+
+   } else if (keyis=='52') {
+        window.mydiv5.innerHTML="Drag or use arrow keys to move in <strong>large</strong> steps. Press 1-4 to change step size.";
+        stepsize=300;
+   }
+//keys to move the large text box
+   if (keyis=='76'||keyis=='37') {
+        //left arrow
+
+        newleft=eval(parseInt(o.style.left)-stepsize);
+
+        if (newleft < eval(300-winW-96)) {
+            newleft=eval(300-winW-96);
+        }
+        o.style.left=newleft+"px";
+        return false;
+   } else if (keyis=='85'||keyis=='38') {
+        //up arrow;
+        newtop=eval(parseInt(o.style.top)-stepsize);
+        //-96-50
+        if (newtop < -146) {
+            newtop=-146;
+        }
+        o.style.top=newtop+"px";
+        return false;
+   } else if (keyis=='82'||keyis=='39') {
+        //right arrow
+        newleft=eval(parseInt(o.style.left)+stepsize);
+       	rightlim=eval(300-96);
+
+        if (newleft > rightlim) {
+            newleft=rightlim;
+        }
+        o.style.left=newleft+"px";
+        return false;
+   } else if (keyis=='68'||keyis=='40') {
+        //down arrow
+        
+        newtop=eval(parseInt(o.style.top)+stepsize);
+        blim=eval(winH-96);
+
+        if (newtop > blim) {
+            newtop=blim;
+        }
+        o.style.top=newtop+"px";
+        return false;
+   } else {
+        // for tab, etc
+        return true;
+   }
+    
+    
+}
+
+
+
+
+
+
+

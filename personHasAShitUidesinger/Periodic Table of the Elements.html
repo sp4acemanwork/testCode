@@ -1,0 +1,2587 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://media.pearsoncmg.com/bc/bc_0media_chem/periodictable/table.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Periodic Table of the Elements</title>
+
+        <link type="text/css" rel="stylesheet" href="./Periodic Table of the Elements_files/largetext.css">
+        
+
+        <style type="text/css">
+            body {
+                background-color:#FAF5EA;
+                font-family: "Free Sans", FreeSans;
+		
+            }
+
+        
+
+
+
+
+           .button_cell {text-align:center;}
+
+           .button_div {width:100%; text-align:center;}
+
+
+
+           .button_cell button {padding: 0px 3px 0px 3px;}
+
+            fieldset {display:inline;}
+
+
+            .big {
+                font-size:2.7em;
+                padding: 2px;
+                padding-top: 15px;
+                padding-left: 5px;
+                margin: 0px;
+
+                width:4em;
+                height:4em;
+                background-image:url('maingroups.png');
+                background-repeat:no-repeat;
+                background-position:center top; 
+
+                vertical-align: top;
+                
+            }
+
+
+            .nobr {
+                white-space: nowrap;
+            }
+
+
+            #forcentering {
+                //width: 25em;
+                width:300px;
+                position:fixed;
+                //top: 3.4em;
+                top: 50px;
+                right: 0px;
+            }
+
+
+
+            .alittletotheright {
+
+                 //position:relative;
+                 //left:20em;
+            }
+
+            .keycells {
+                cursor: hand; cursor: pointer;
+                border: 1px solid black;
+                padding: 2px;
+            }
+
+            .keycells:hover {
+                border: 2px solid white;
+                padding: 2px;
+            }
+
+            
+            table {
+	            //chrome can't handle this
+                //border-collapse:collapse; 
+                border-spacing: 1px;
+                border: 0px;
+                
+            }
+            
+            
+            th, td {
+                border:1px solid #000000;
+                padding: 2px;
+            }
+
+            
+            .formfields {
+
+                 //background-color:#FFFFFF;
+                 display: inline;
+                 margin: 3px 10px;
+                 
+                 
+                 
+                 padding: 3px 10px;
+                 //border:1px solid #000000;
+
+             }
+
+             .nav {
+                 width: 100%;
+                 text-align: right;
+             }
+
+            
+
+
+            ul, li {
+                padding:0px;
+                margin: 0px;
+ 	          list-style: none inside none;
+                text-align: center;
+                font-size: .9em;
+                line-height: 95%;
+
+                
+            }
+            ul {
+                margin: 2px;
+
+            }
+            ul li:first-child+li{
+                font-size:1.4em;
+                margin: 2px;
+            }
+
+             ul li:first-child+li+li{
+                cursor: text;
+            }           
+            .name {
+                font-size:.75em;
+                cursor: text;
+             
+                display: block;
+            }
+
+            .series_name {
+                font-size:.8em;
+                cursor: text;
+             
+                display: block;
+            }
+
+            .range {
+                font-size:1em;
+                font-weight: bold;
+                text-align: center;
+                margin: 0px;
+
+            }
+
+            .big ul li:first-child+li+li{
+                cursor: move;
+            }           
+            .big .name {
+
+                cursor: move;
+             
+            }
+
+            h3 {
+                font-size: .8em;
+                font-weight: normal;
+                padding: 0;
+                margin: 0;
+            }
+            .screen_readers_only {
+                position:absolute;
+	          left:-999px;
+	          top:auto;
+	          width:1px;
+	          height:1px;
+	          overflow:hidden;
+            }
+
+            .back_on_focus {
+
+                position: static;
+
+
+            }
+
+            
+            /* set by col, but also added individually to keycells
+              so that it can be copied reliably to the zoom cell */
+            .transition_metals {
+                background-color:#D8E2F0;
+            }
+
+            .main_groups {
+                background-color:#ECDFCA;
+                
+            }
+
+            .lanthanides td {
+                background-color:#DCC9CD;
+            }
+            .actinides td {
+                background-color:#BEABAE;
+            }
+
+
+
+          
+            /* Labels in lower table */
+            tr.lanthanides th:first-child+th, tr.actinides th:first-child+th{
+                padding: 5px;
+                text-align: left;
+            }
+            #ls, #as {
+                color: #000000;
+            }
+
+
+            /* last cells in lower table */
+            tr.lanthanides th:first-child+th+td+td+td+td+td+td+td+td+td+td+td+td+td+td+td+td, tr.actinides th:first-child+th+td+td+td+td+td+td+td+td+td+td+td+td+td+td+td+td{
+                padding:0px 5px;
+                background-color:#FAF5EA;
+                font-size:.8em;
+                border-style:none;
+             }
+
+            tr.lanthanides th:first-child+th+td+td+td+td+td+td+td+td+td+td+td+td+td+td+td+td button, tr.actinides th:first-child+th+td+td+td+td+td+td+td+td+td+td+td+td+td+td+td+td button{
+                font-size:.9em;
+                width: 10em;
+             }
+
+            #a, #l {
+                text-align: center;
+            }
+            #a a, #a a:visited, #a a:active, #a a:link, #a a:hover, #l a, #l a:visited, #l a:active, #l a:link, #l a:hover {
+                font-size: 1.4em;
+            }
+
+            a, a:visited, a:active, a:link, a:hover {
+                color: #0000BF;
+            }
+  
+            .group8b {
+                background-color:#ACBAB5;
+            }
+            
+
+
+
+            #pt tbody td, #key td, #la td {
+                border-width: 1px;
+            }
+
+
+ 
+/*
+            table thead tr:first-child+tr th, table thead tr:first-child th {
+                padding-bottom: 10px;
+                border-style: none;
+            }
+*/
+
+            .nb {
+                border-style:none;
+                background-color:#FAF5EA;
+ 
+            }
+            
+        </style>
+
+        <script type="text/javascript">
+
+
+              //element         up down right left pronunciation
+              var H = new Array('','Li','He','');
+              var He = new Array('','Ne','Li','H','H E');
+
+
+              //element         up down right left
+              var Li = new Array('H','Na','Be','He','L I');   
+              var Be = new Array('','Mg','B','Li','B E');  
+
+              var B = new Array('','Al','C','Be'); 
+              var C = new Array('','Si','N','B'); 
+              var N = new Array('','P','O','C'); 
+              var O = new Array('','S','F','N'); 
+              var F = new Array('','Cl','Ne','O');
+              var Ne = new Array('He','Ar','Na','F','N E');
+
+
+              //element           up  down right left
+              var Na = new Array('Li','K','Mg','Ne','N Ay');   
+              var Mg = new Array('Be','Ca','Al','Na');  
+
+              var Al = new Array('B','Ga','Si','Mg','Ay L'); 
+              var Si = new Array('C','Ge','P','Al','S I'); 
+              var P = new Array('N','As','S','Si'); 
+              var S = new Array('O','Se','Cl','P'); 
+              var Cl = new Array('F','Br','Ar','S','C L');
+              var Ar = new Array('Ne','Kr','K','Cl','Ay R');
+
+
+
+
+              //element           up  down right left
+              var K = new Array('Na','Rb','Ca','Ar');   
+              var Ca = new Array('Mg','Sr','Sc','K','C Ay');  
+
+              var Sc = new Array('','Y','Ti','Ca'); 
+              var Ti = new Array('','Zr','V','Sc','T I'); 
+              var V = new Array('','Nb','Cr','Ti'); 
+              var Cr = new Array('','Mo','Mn','V'); 
+              var Mn = new Array('','Tc','Fe','Cr');
+              var Fe = new Array('','Ru','Co','Mn','F E'); 
+              var Co = new Array('','Rh','Ni','Fe','C O'); 
+              var Ni = new Array('','Pd','Cu','Co','N I'); 
+              var Cu = new Array('','Ag','Zn','Ni','C U'); 
+              var Zn = new Array('','Cd','Ga','Cu');
+
+
+              var Ga = new Array('Al','In','Ge','Zn','G Ay'); 
+              var Ge = new Array('Si','Sn','As','Ga','G E'); 
+              var As = new Array('P','Sb','Se','Ge','Ay S'); 
+              var Se = new Array('S','Te','Br','As','S E'); 
+              var Br = new Array('Cl','I','Kr','Se');
+              var Kr = new Array('Ar','Xe','Rb','Br');
+
+
+           //Period 5
+              //element           up  down right left
+              var Rb = new Array('K','Cs','Sr','Kr');   
+              var Sr = new Array('Ca','Ba','Y','Rb','S R');  
+
+              var Y =  new Array('Sc','lcell','Zr','Sr'); 
+              var Zr = new Array('Ti','Hf','Nb','Y'); 
+              var Nb = new Array('V','Ta','Mo','Zr'); 
+              var Mo = new Array('Cr','W','Tc','Nb','M O'); 
+              var Tc = new Array('Mn','Re','Ru','Mo');
+              var Ru = new Array('Fe','Os','Rh','Tc','R U'); 
+              var Rh = new Array('Co','Ir','Pd','Ru'); 
+              var Pd = new Array('Ni','Pt','Ag','Rh'); 
+              var Ag = new Array('Cu','Au','Cd','Pd','Ay G'); 
+              var Cd = new Array('Zn','Hg','In','Ag');
+
+
+              var In = new Array('Ga','Tl','Sn','Cd','I N'); 
+              var Sn = new Array('Ge','Pb','Sb','In'); 
+              var Sb = new Array('As','Bi','Te','Sn'); 
+              var Te = new Array('Se','Po','I','Sb','T E'); 
+              var I =  new Array('Br','At','Xe','Te');
+              var Xe = new Array('Kr','Rn','Cs','I','X E');
+
+
+
+          //Period 6
+              //element           up  down right left
+              var Cs = new Array('Rb','Fr','Ba','Xe');   
+              var Ba = new Array('Sr','Ra','lcell','Cs','B Ay');  
+
+              var lcell = new Array('Y','acell','Hf','Ba'); 
+              var Hf = new Array('Zr','Rf','Ta','lcell'); 
+              var Ta = new Array('Nb','Db','W','Hf','T Ay'); 
+              var W = new Array('Mo','Sg','Re','Ta'); 
+              var Re = new Array('Tc','Bh','Os','W','R E');
+              var Os = new Array('Ru','Hs','Ir','Re','O S'); 
+              var Ir = new Array('Rh','Mt','Pt','Os','I R'); 
+              var Pt = new Array('Pd','Ds','Au','Ir','P T'); 
+              var Au = new Array('Ag','Rg','Hg','Pt','Ay U'); 
+              var Hg = new Array('Cd','Cn','Tl','Au');
+
+
+              var Tl = new Array('In','Uut','Pb','Hg'); 
+              var Pb = new Array('Sn','Fl','Bi','Tl'); 
+              var Bi = new Array('Sb','Uup','Po','Pb','B I'); 
+              var Po = new Array('Te','Lv','At','Bi','P O'); 
+              var At =  new Array('I','Uus','Rn','Po','Ay T');
+              var Rn = new Array('Xe','Uuo','Fr','At');
+
+
+
+              //element           up  down right left
+              var Fr =    new Array('Cs','','Ra','Rn');   
+              var Ra =    new Array('Ba','','acell','Fr','R Ay');  
+
+              var acell = new Array('lcell','','Rf','Ra'); 
+              var Rf =    new Array('Hf','','Db','acell'); 
+              var Db =    new Array('Ta','','Sg','Rf'); 
+              var Sg =    new Array('W','','Bh','Db'); 
+              var Bh =    new Array('Re','','Hs','Sg');
+              var Hs =    new Array('Os','','Mt','Bh'); 
+              var Mt =    new Array('Ir','','Ds','Hs'); 
+              var Ds =    new Array('Pt','','Rg','Mt'); 
+              var Rg =    new Array('Au','','Cn','Ds'); 
+              var Cn =    new Array('Hg','','Uut','Rg');
+
+
+              var Uut =   new Array('Tl','','Fl','Cn','U U T'); 
+              var Fl =    new Array('Pb','','Uup','Uut'); 
+              var Uup =   new Array('Bi','','Lv','Fl','U U P'); 
+              var Lv =    new Array('Po','','Uus','Uup'); 
+              var Uus =   new Array('At','','Uuo','Lv','U U S');
+              var Uuo =   new Array('Rn','','','Uus','U U O');
+
+              // 	Lanthanides
+              //element           up  down right left
+              var La =    new Array('','Ac','Ce','','L Ay');   
+              var Ce =    new Array('','Th','Pr','La','C E');   
+              var Pr =    new Array('','Pa','Nd','Ce'); 
+              var Nd =    new Array('','U','Pm','Pr'); 
+              var Pm =    new Array('','Np','Sm','Nd'); 
+              var Sm =    new Array('','Pu','Eu','Pm');
+              var Eu =    new Array('','Am','Gd','Sm','E U'); 
+              var Gd =    new Array('','Cm','Tb','Eu'); 
+              var Tb =    new Array('','Bk','Dy','Gd'); 
+              var Dy =    new Array('','Cf','Ho','Tb','D Y'); 
+              var Ho =    new Array('','Es','Er','Dy','H O');
+              var Er =    new Array('','Fm','Tm','Ho','E R'); 
+              var Tm =    new Array('','Md','Yb','Er'); 
+              var Yb =    new Array('','No','Lu','Tm','Y B'); 
+              var Lu =    new Array('','Lr','Ac','Yb','L U'); 
+
+              // 	Actinides
+              //element           up  down right left
+              var Ac =    new Array('La','','Th','Lu','Ay C');   
+              var Th =    new Array('Ce','','Pa','Ac');   
+              var Pa =    new Array('Pr','','U','Th','P Ay'); 
+              var U  =    new Array('Nd','','Np','Pa'); 
+              var Np =    new Array('Pm','','Pu','U'); 
+              var Pu =    new Array('Sm','','Am','Np','P U');
+              var Am =    new Array('Eu','','Cm','Pu','Ay M'); 
+              var Cm =    new Array('Gd','','Bk','Am'); 
+              var Bk =    new Array('Tb','','Cf','Cm'); 
+              var Cf =    new Array('Dy','','Es','Bk'); 
+              var Es =    new Array('Ho','','Fm','Cf','E S');
+              var Fm =    new Array('Er','','Md','Es'); 
+              var Md =    new Array('Tm','','No','Fm'); 
+              var No =    new Array('Yb','','Lr','Md','N O'); 
+              var Lr =    new Array('Lu','','','No'); 
+
+
+
+
+
+              function other() {
+                  if (window.mystate=='american') {
+   
+                      if (window.mystate2 == 'merged') {
+
+                          //do this with default rows as per usual
+                          var tableHead = window.tr_american.parentNode;
+
+                          //actual switch
+                          tableHead.replaceChild(window.tr_other,window.tr_american);
+
+                      } else {
+
+                          //do this with the special unmerged rows instead
+                          var tableHead = window.tr_americanUM.parentNode;
+                     
+                          //actual switch
+                          tableHead.replaceChild(window.tr_otherUM,window.tr_americanUM);
+
+                      }
+
+                      window.mystate='other';
+                  }
+                 
+                                                  
+              }
+
+
+
+
+              function tramerican() {
+                  
+                  if (window.mystate=='other') {
+
+                      if (window.mystate2 == 'merged') {
+
+                          //do this with default rows as per usual
+                          var tableHead = window.tr_other.parentNode;
+
+                          //actual switch
+                          tableHead.replaceChild(window.tr_american,window.tr_other);
+                         
+
+                      } else {
+
+                          //do this with the special unmerged rows instead
+                          var tableHead = window.tr_otherUM.parentNode;
+                     
+                          //actual switch
+                          tableHead.replaceChild(window.tr_americanUM,window.tr_otherUM);
+
+                      }
+
+                      window.mystate='american';
+                  }
+                                                  
+              }
+
+              function MyOnLoad() {
+
+
+                 // prior to removing the unmerged table rows for periods 1-3
+                 // get a static list of the lis to use in the spelling functionality
+
+                 // because IE doesn't understand ByClassName
+                 if (document.getElementsByClassName) {
+                      window.keylisLIVE = document.getElementsByClassName('keylis');
+                 } else {
+                      // for IE
+                      // I don't want to loop twice, so I'll narrow them down further
+                      // in for loop in the actual spellOut() function below
+                      window.keylisLIVE = document.getElementsByTagName('li');
+                 }
+                 //window.keylisLIVE will change with DOM changes!
+                 //create static version:
+          
+                 window.keylis = new Array();
+                 for (var i=0; i<keylisLIVE.length;i++) {
+                      keylis[i] = keylisLIVE[i];
+                 }
+
+                 // SAME AS ABOVE
+                 // because IE doesn't understand ByClassName
+                 if (document.getElementsByClassName) {
+                      window.keycellsLIVE = document.getElementsByClassName('keycells');
+                 } else {
+                      // for IE
+                      // I don't want to loop twice, so I'll narrow them down further
+                      // in function below
+                      window.keycellsLIVE = document.getElementsByTagName('td');
+                 }
+                 window.keycells = new Array();
+
+                 //up to 74
+                 for (var i=0; i<75;i++) {
+                      keycells[i] = keycellsLIVE[i];
+                 }
+
+                 keycells[75] = document.getElementById('lcell');
+
+                 //up to 92
+                 for (var i=76; i<93;i++) {
+                      keycells[i] = keycellsLIVE[i-1];
+                 }
+
+                 keycells[93] = document.getElementById('acell');
+                 //the rest
+
+                 for (var i=94; i<keycellsLIVE.length+2;i++) {
+                      keycells[i] = keycellsLIVE[i-2];
+                 }
+
+
+
+                 // get the A parts of the 3 hidden sentences before we change the DOM
+                 window.sentencespell5 = document.getElementById('sentencespell5'); 
+                 window.sentencespell6 = document.getElementById('sentencespell6'); 
+
+                 //causes Voice Over to stop reading and wait for further commands, so removing from version especially for Voice Over
+                 //window.sentencespell3 = document.getElementById('sentencespell3');
+                 //window.sentencespell4 = document.getElementById('sentencespell4'); 
+                 //window.sentencespell5 = document.getElementById('sentencespell5'); 
+                 //window.sentencespell6 = document.getElementById('sentencespell6');
+
+
+
+
+                 //check the check box, since browsers stupidly keep unchecking it
+                 // turning off autocomplete worked for ff, but not ie 8
+
+                 document.getElementById('spellout').checked = true;
+
+                 //same thing here
+                 document.getElementById('unmerge').checked = false;
+
+
+
+                 //these are the nodes that are removed/added for the spell out functionality
+                 window.spellversion = document.getElementById('navbysym');
+                 window.mybutton = document.getElementById('navbysym_b');
+
+                 //at last minute changed our minds and want reverse as the default
+                 // so just running the onClick function here
+                 spellOut();
+
+
+                 window.tr_other = document.getElementById('tr_other');
+                 //line below to prep for reverse function tramerican()
+                 window.tr_american = document.getElementById('tr_american');
+
+                 window.tr_otherUM = document.getElementById('tr_otherUM');
+                 //line below to prep for reverse function tramerican()
+                 window.tr_americanUM = document.getElementById('tr_americanUM');
+
+                 //remove the placeholder first td from the row - just in case js isn't available
+                 //placeholder is only needed because of merged cells in upper left
+                 //this is not needed for UNMERGED case
+                 window.tr_other.removeChild(document.getElementById('placeholder'));
+
+
+
+                 //remove the row
+                 window.tr_other.parentNode.removeChild(window.tr_other);
+                 //remove styles from the picture
+                 window.tr_other.style.display = 'table-row'; 
+
+                 window.mystate='american';
+                 window.mystate2='merged';
+
+                 //remove the row UNMERGED
+                 window.tr_otherUM.parentNode.removeChild(window.tr_otherUM);
+                 //remove styles from the picture
+                 window.tr_otherUM.style.display = 'table-row'; 
+
+
+
+                 //remove the other unmerge items, but save their references
+                 //see also above tr_americanUM (saved above) and tr_otherUM (saved and removed above)
+
+                 window.unmerge1 = document.getElementById('unmerged1');
+                 window.unmerge2 = document.getElementById('unmerged2');
+                 window.unmerge3 = document.getElementById('unmerged3');
+
+                 
+                 window.unmerge1.parentNode.removeChild(window.unmerge1);
+                 window.unmerge2.parentNode.removeChild(window.unmerge2);
+                 window.unmerge3.parentNode.removeChild(window.unmerge3);
+
+                 //even though state is american, we remove tr_americanUM since this not unmerged
+                 window.tr_americanUM.parentNode.removeChild(window.tr_americanUM);
+
+                 //finally, remove styles from the picture for the rest of the unmerged items (tr_otherUM is done above)
+
+                 window.tr_americanUM.style.display = 'table-row'; 
+                 window.unmerge1.style.display = 'table-row'; 
+                 window.unmerge2.style.display = 'table-row'; 
+                 window.unmerge3.style.display = 'table-row'; 
+
+                 // and save that top row as well
+                 window.toprow = document.getElementById('toprow');
+
+                 // and save the regular periods 1-3
+                 window.period1 = document.getElementById('period1');
+                 window.period2 = document.getElementById('period2');
+                 window.period3 = document.getElementById('period3');
+
+
+                 // same issue for checking the default radio button
+                 document.getElementById('american').checked = true;
+
+                 var dd = document.createElement('script');
+                 dd.setAttribute('src','dom-drag.js');
+                 dd.setAttribute('language','JavaScript');
+                 dd.setAttribute('type','text/javascript');
+                 document.getElementsByTagName("head")[0].appendChild(dd);
+
+                 var dd2 = document.createElement('script');
+                 dd2.setAttribute('src','keyboard_for_drag.js');
+                 dd2.setAttribute('language','JavaScript');
+                 dd2.setAttribute('type','text/javascript');
+                 document.getElementsByTagName("head")[0].appendChild(dd2);
+
+                 //find x and y for zoomed in view
+                 //var empty_td = document.getElementById('firstempty');
+                 //var rect = empty_td.getBoundingClientRect();
+                 
+
+                 //keycells is set above, prior to table row removal
+                 
+                 for (var i = 0; i < window.keycells.length; i++) {
+
+                      //to be able to hard code these for the link cells
+                      //if (i==75 || i==93) {
+                      //   i=i+1;
+                      //}
+                      
+                      var keycell=window.keycells[i];
+ 
+                      if ((keycell.className.indexOf('keycells')!== -1)||(keycell.id=='lcell')||(keycell.id=='acell')) {
+                           //add tabindex to each cell
+                           //h has tabindex of 0
+                           if (keycell.id!='H'&& keycell.id!='La' && keycell.id!='lcell' && keycell.id!='acell') {
+                                keycell.setAttribute('tabindex','-1');
+                           }
+
+                           //add onMouseOver & onFocus
+                           keycell.setAttribute('onfocus','MyOnFocus('+i+');')
+
+                           keycell.setAttribute('onblur','MyOnBlur('+i+');')
+                           keycell.setAttribute('onkeydown','return MyOnKeyPress(event,'+i+');')
+
+
+
+                           //keycell.setAttribute('onmouseover','MyOnMouseOver('+i+');')
+                           //keycell.setAttribute('onmouseout','MyOnMouseOut('+i+');')
+                      }
+
+                 }
+
+                 // implement options if not default
+                 // only needed once options are saved by cookie
+                 // HERE
+
+              }
+
+              window.mySavedTHs = new Array();
+              window.mySavedTHsUM = new Array();
+              window.mySavedSentences = new Array();
+
+              function spellOut() {
+
+
+
+               // THE ELEMENTS IN THE TABLE
+                  
+    
+                 // in order to address the rows that are removed
+                 // for merged cells the collection of the key li elements is 
+                 // now done onload and stored in a static list (the lists you generally get are dynamic)
+                 // in most browsers these are just the relevant lis
+                 // in IE these are all of the lis, so you will see they are checked for classname below
+                      
+
+                                      
+                 for (var i = 0; i < window.keylis.length; i++) {
+                      
+
+                      keyli=window.keylis[i];
+ 
+                      if (window.keyli.className.indexOf('keylis')!== -1) { 
+                          if (document.getElementById('spellout').checked==true) {
+
+                               //silence the default version in screen readers
+                               keyli.childNodes[0].setAttribute('aria-hidden','true');
+                          
+                               //create the spelled out version
+                               var spellNode = document.createElement('nobr');
+                               spellNode.setAttribute('class','screen_readers_only nobr');
+                               var myID = keyli.parentNode.parentNode.parentNode.id;
+                               var myText = window[myID][4];
+
+                               //create ( and append --- for css off or when aria-hidden is not supported
+                               var hiddenOpen = document.createElement('span');
+                               hiddenOpen.setAttribute('aria-hidden','true');
+                               hiddenOpen.appendChild(document.createTextNode(' ('));
+                               spellNode.appendChild(hiddenOpen);
+
+                               //create text node and append
+                               spellNode.appendChild(document.createTextNode(myText));
+
+                               //created ) and append --- for css off or when aria-hidden is not supported
+                               var hiddenClose = document.createElement('span');
+                               hiddenClose.setAttribute('aria-hidden','true');
+                               hiddenClose.appendChild(document.createTextNode(')'));
+                               spellNode.appendChild(hiddenClose);
+
+                               keyli.appendChild(spellNode);
+                          } else {
+
+                               //put default version back in screen readers
+                               keyli.childNodes[0].setAttribute('aria-hidden','false');
+                          
+                               //remove spelled out version
+                               keyli.removeChild(keyli.childNodes[1]);
+
+
+                          }
+                      }
+
+                 }
+
+
+              
+               // American Group Labels
+
+                    // use names so it covers when they aren't in DOM tree
+                    // change both so it works if people change other options later
+                    var myTHs = tr_american.childNodes;
+                    var myTHsUM = tr_americanUM.childNodes;
+                               
+  
+                    //myTHs
+                    if (document.getElementById('spellout').checked==true) {
+         
+                          //ADDING SPELLINGS
+                          for (var i = 0; i < myTHs.length; i++) {
+                           
+                              var myTH = myTHs[i];  
+
+                              //if it is one of the As not the Bs and if spelling isn't already up, as it is onload
+                              if (myTH.childNodes.length > 1 && myTH.lastChild.getAttribute('class')!='screen_readers_only') {
+                              
+                                   //put spelling back
+                                   myTH.appendChild(mySavedTHs[i]);
+
+                                   //put aria-hidden back on the ordinary version, too
+                                   myTH.childNodes[1].setAttribute('aria-hidden','true');
+
+                              } 
+
+                          }
+
+                    } else {
+
+                          //REMOVING SPELLINGS
+                          for (var i = 0; i < myTHs.length; i++) {
+
+                              var myTH = myTHs[i];
+
+                              //have a heart, save the spellings!!!
+                              //happens for Bs to to keep the numbering good
+                              window.mySavedTHs[i]=myTH.lastChild;
+   
+                              //if it is one of the As not the Bs
+                              if (myTH.childNodes.length > 1) {
+
+                                  //remove the spellings
+                                  myTH.removeChild(myTH.lastChild);
+
+                                  //get rid of aria-hidden on the ordinary version
+                                  myTH.childNodes[1].setAttribute('aria-hidden','false');
+                              }
+
+                          }
+
+                      }
+
+                    //myTHsUM
+
+                    if (document.getElementById('spellout').checked==true) {
+         
+                          //ADDING SPELLINGS
+                          for (var i = 1; i < myTHsUM.length; i++) {
+                           
+                              var myTH = myTHsUM[i];  
+
+                              //if it is one of the As not the Bs and if spelling isn't already up, as it is onload
+                              if (myTH.childNodes.length > 1 && myTH.lastChild.getAttribute('class')!='screen_readers_only') {
+                                 
+                                   //put spelling back
+                                   myTH.appendChild(mySavedTHsUM[i]);
+
+                                   //put aria-hidden back on the ordinary version, too
+                                   myTH.childNodes[5].setAttribute('aria-hidden','true');
+
+                              } 
+
+                          }
+
+                    } else {
+
+                          //REMOVING SPELLINGS
+                          for (var i = 0; i < myTHsUM.length; i++) {
+
+                              var myTH = myTHsUM[i];
+
+                              //have a heart, save the spellings!!!
+                              window.mySavedTHsUM[i]=myTH.lastChild;
+   
+                              //if it is one of the As not the Bs
+                              if (myTH.childNodes.length > 1) {
+
+                                  //remove the spellings
+                                  myTH.removeChild(myTH.lastChild);
+
+                                  //get rid of aria-hidden on the ordinary version
+                                  myTH.childNodes[1].setAttribute('aria-hidden','false');
+                              }
+
+                          }
+
+                      }
+                
+                 // Sentences
+
+                /*  Decided not to do this for the VoiceOver version as it requires <span> tags in 
+                    the middle of the sentences, which break the sentences up in VoiceOver */
+
+                      if (document.getElementById('spellout').checked==true) {
+         
+                          //ADDING SPELLINGS
+         
+
+                              //if spelling isn't already up, as it is onload
+                              if (sentencespell5.childNodes.length == 1) {
+                               
+                                   //put spelling back
+                                   sentencespell5.appendChild(mySavedSentences[0]);
+
+                                   //put aria-hidden back on the ordinary version, too
+                                   sentencespell5.childNodes[0].setAttribute('aria-hidden','true');
+
+                              } 
+                              //if spelling isn't already up, as it is onload
+                              if (sentencespell6.childNodes.length == 1) {
+                              
+                                   //put spelling back
+                                   sentencespell6.appendChild(mySavedSentences[1]);
+
+                                   //put aria-hidden back on the ordinary version, too
+                                   sentencespell6.childNodes[0].setAttribute('aria-hidden','true');
+
+                              } 
+                             
+                       } else {
+
+                          //REMOVING SPELLINGS
+
+
+                              // have a heart, save the spellings!!!
+                              // at the moment, they are all the same
+                              window.mySavedSentences[0]=window.sentencespell5.childNodes[1];
+                              window.mySavedSentences[1]=window.sentencespell6.childNodes[1];
+
+                              if (sentencespell5.childNodes.length == 2) {
+                                  //remove the spellings
+                                  sentencespell5.removeChild(sentencespell5.childNodes[1]);
+                                  //get rid of aria-hidden on the ordinary version
+                                  sentencespell5.childNodes[0].setAttribute('aria-hidden','false');
+                              }
+
+
+                              if (sentencespell6.childNodes.length == 2) {
+                                  //remove the spellings
+                                  sentencespell6.removeChild(sentencespell6.childNodes[1]);
+                                  //get rid of aria-hidden on the ordinary version
+                                  sentencespell6.childNodes[0].setAttribute('aria-hidden','false');
+                              }
+
+                        }
+
+
+              }
+
+              function MyOnFocus (i) {
+
+                    if (keycells[i].id!='lcell' && keycells[i].id!='acell') {
+                         window.keycells[i].style.border='2px solid black';
+                         window.keycells[i].style.padding='1px';
+                    }
+                  
+                    var InnerDiv = window.keycells[i].firstChild.cloneNode(true);
+
+                    var ZoomTD = document.getElementById('zoomplace');
+                    
+                    //place copy of div
+                    ZoomTD.replaceChild(InnerDiv,ZoomTD.firstChild);
+
+                    //make big cell same color as little cell
+
+                    //for most
+                    ZoomTD.style.backgroundColor='#ECDFCA';
+                    ZoomTD.style.backgroundImage='url(maingroups.png)';
+                    
+                    //pick up color for the others 
+                    if (window.keycells[i].className=='keycells transition_metals') { 
+                         ZoomTD.style.backgroundColor='#D8E2F0';
+                         ZoomTD.style.backgroundImage='url(transmetals.png)';
+                    }
+
+                    if (window.keycells[i].className=='lanthanides keycells') { 
+                         ZoomTD.style.backgroundColor='#DCC9CD';
+                         ZoomTD.style.backgroundImage='url(lan.fw.png)';
+                    }
+
+
+                    if (window.keycells[i].className=='actinides keycells') { 
+                         ZoomTD.style.backgroundColor='#BEABAE';
+                         ZoomTD.style.backgroundImage='url(act.fw.png)';
+                    }
+
+                    if (window.keycells[i].className=='group8b keycells') { 
+                         ZoomTD.style.backgroundColor='#ACBAB5';
+                         ZoomTD.style.backgroundImage='url(8b.fw.png)';
+                    }
+
+
+              }
+
+              //function MyOnMouseOver (i) {
+              //      window.keycells[i].style.border='2px solid white';
+              //      window.keycells[i].style.padding='1px';
+              //}
+
+              //function MyOnMouseOut (i) {
+              //      window.keycells[i].style.border='1px solid black';
+              //      window.keycells[i].style.padding='2px';
+              //}
+
+
+              function MyOnBlur (i) {
+                   if (keycells[i].id!='lcell' && keycells[i].id!='acell') {
+                      window.keycells[i].style.border='1px solid black';
+                      window.keycells[i].style.padding='2px';
+                   }
+
+              }
+
+              function MyOnKeyPress (event,i) {
+
+                    //up arrow
+                    if(event.keyCode==38) {
+
+                         var mystring = window.keycells[i].id;
+
+                         // change from a string that matches array name to the array itself
+                         var myarray = window[mystring];
+
+                         if (myarray[0]!='') {
+                              document.getElementById(myarray[0]).focus();
+                         }
+                         return false;
+                    };
+
+                    //down arrow
+                    if(event.keyCode==40) {
+
+                         var mystring = window.keycells[i].id;
+
+                         // change from a string that matches array name to the array itself
+                         var myarray = window[mystring];
+
+                         if (myarray[1]!='') {
+                              document.getElementById(myarray[1]).focus();
+                         }
+                         return false;
+                    };
+
+                    //right arrow
+                    if(event.keyCode==39) {
+
+                         var mystring = window.keycells[i].id;
+
+                         // change from a string that matches array name to the array itself
+                         var myarray = window[mystring];
+
+                         if (myarray[2]!='') {
+
+                              document.getElementById(myarray[2]).focus();
+                         }
+                         return false;
+                    }
+
+                    //left arrow
+                    if(event.keyCode==37) {
+
+                         var mystring = window.keycells[i].id;
+
+                         // change from a string that matches array name to the array itself
+                         var myarray = window[mystring];
+
+                         if (myarray[3]!='') {
+                              document.getElementById(myarray[3]).focus();
+                         }
+                         return false;
+                    }
+
+
+
+                    return true;
+
+
+              }
+
+
+              //myid is id of the select menu
+              function Go(myid) {
+                    var myselect = document.getElementById(myid);
+                    var myelement = myselect.options[myselect.selectedIndex].value;
+                    document.getElementById(myelement).focus();
+              }
+
+              //myid is id of the text field
+              function Go2(myid) {
+                    var mytext = document.getElementById(myid);
+                    var myelement = mytext.value.toLowerCase();
+                    var firstletter = myelement.charAt(0).toUpperCase();
+                    myelementt = firstletter.concat(myelement.substring(1));
+                    if (window[myelementt]) {
+                        document.getElementById(myelementt).focus();
+                    } else {
+                        alert(mytext.value + ' is not a symbol in the periodic table.');
+                    }
+              }
+
+    
+              //these assume just one class for the item
+
+              function showOnFocus(theItemId) {
+                    var theItem = document.getElementById(theItemId);
+                    theItem.setAttribute('class','back_on_focus');
+              }
+
+              function hideOnBlur(theItemId) {
+                    var theItem = document.getElementById(theItemId);
+                    theItem.setAttribute('class','screen_readers_only');
+              }
+
+              
+
+              function unmergeForVO() {
+
+                    // display node and handling of the placeholder cell
+                    // were already handled onload, so aren't an issue here
+
+                    if (document.getElementById('unmerge').checked==true) {
+
+
+                         // Show special safari view 
+                         window.mystate2="unmerged";
+
+
+                         //remove top row 
+                         window.toprow.parentNode.removeChild(window.toprow);
+
+                         //group labeling
+                         if (window.mystate == 'american') {
+                               window.tr_american.parentNode.replaceChild(window.tr_americanUM,window.tr_american);
+                         } else {
+                               window.tr_other.parentNode.replaceChild(window.tr_otherUM,window.tr_other);
+                         }
+
+                         //periods one - three
+                         window.period1.parentNode.replaceChild(window.unmerge1,window.period1);
+                         window.period2.parentNode.replaceChild(window.unmerge2,window.period2);
+                         window.period3.parentNode.replaceChild(window.unmerge3,window.period3);
+
+
+                    } else {
+
+
+                         // Revert from special safari view
+                         window.mystate2="merged";
+
+                         //replace top row 
+                         document.getElementById('mythead').insertBefore(window.toprow,document.getElementById('mythead').childNodes[0]);
+
+                         //group labeling
+                         if (window.mystate == 'american') {
+                               window.tr_americanUM.parentNode.replaceChild(window.tr_american,window.tr_americanUM);
+                         } else {
+                               window.tr_otherUM.parentNode.replaceChild(window.tr_other,window.tr_otherUM);
+                         }
+
+                         //periods one - three
+                         window.unmerge1.parentNode.replaceChild(window.period1,window.unmerge1);
+                         window.unmerge2.parentNode.replaceChild(window.period2,window.unmerge2);
+                         window.unmerge3.parentNode.replaceChild(window.period3,window.unmerge3);
+
+                    }
+
+              }
+
+        </script>
+
+
+    <script src="./Periodic Table of the Elements_files/dom-drag.js.download" language="JavaScript" type="text/javascript"></script><script src="./Periodic Table of the Elements_files/keyboard_for_drag.js.download" language="JavaScript" type="text/javascript"></script></head>
+    <body onload="MyOnLoad();">
+
+<div role="navigation" class="nav">
+
+<!-- ########## SYMBOL ############# -->
+<div class="formfields" id="myform">
+
+<input type="text" id="navbysym" aria-label="Find Element By Symbol" title="Find Element By Symbol" size="3" maxlength="3">
+<button onclick="Go2(&#39;navbysym&#39;);" id="navbysym_b">Find Symbol</button>
+
+
+
+
+
+</div>
+
+
+
+
+
+<!-- ########## NAME ############# -->
+<div class="formfields" id="myform2">
+
+<select id="navbyname" aria-label="Select Element by Name" title="Select Element by Name">
+<option value="Ac">Actinium</option>
+<option value="Al">Aluminum</option>
+<option value="Am">Americium</option>
+<option value="Sb">Antimony</option>
+<option value="Ar">Argon</option>
+<option value="As">Arsenic</option>
+<option value="At">Astatine</option>
+<option value="Ba">Barium</option>
+<option value="Bk">Berkelium</option>
+<option value="Be">Beryllium</option>
+<option value="Bi">Bismuth</option>
+<option value="Bh">Bohrium</option>
+<option value="B">Boron</option>
+<option value="Br">Bromine</option>
+<option value="Cd">Cadmium</option>
+<option value="Ca">Calcium</option>
+<option value="Cf">Californium</option>
+<option value="C">Carbon</option>
+<option value="Ce">Cerium</option>
+<option value="Cs">Cesium</option>
+<option value="Cl">Chlorine</option>
+<option value="Cr">Chromium</option>
+<option value="Co">Cobalt</option>
+<option value="Cn">Copernicium</option>
+<option value="Cu">Copper</option>
+<option value="Cm">Curium</option>
+<option value="Ds">Darmstadtium</option>
+<option value="Db">Dubnium</option>
+<option value="Dy">Dysprosium</option>
+<option value="Es">Einsteinium</option>
+<option value="Er">Erbium</option>
+<option value="Eu">Europium</option>
+<option value="Fm">Fermium</option>
+<option value="Fl">Flerovium</option>
+<option value="F">Fluorine</option>
+<option value="Fr">Francium</option>
+<option value="Gd">Gadolinium</option>
+<option value="Ga">Gallium</option>
+<option value="Ge">Germanium</option>
+<option value="Au">Gold</option>
+<option value="Hf">Hafnium</option>
+<option value="Hs">Hassium</option>
+<option value="He">Helium</option>
+<option value="Ho">Holmium</option>
+<option value="H">Hydrogen</option>
+<option value="In">Indium</option>
+<option value="I">Iodine</option>
+<option value="Ir">Iridium</option>
+<option value="Fe">Iron</option>
+<option value="Kr">Krypton</option>
+<option value="La">Lanthanum</option>
+<option value="Lr">Lawrencium</option>
+<option value="Pb">Lead</option>
+<option value="Li">Lithium</option>
+<option value="Lv">Livermorium</option>
+<option value="Lu">Lutetium</option>
+<option value="Mg">Magnesium</option>
+<option value="Mn">Manganese</option>
+<option value="Mt">Meitnerium</option>
+<option value="Md">Mendelevium</option>
+<option value="Hg">Mercury</option>
+<option value="Mo">Molybdenum</option>
+<option value="Nd">Neodymium</option>
+<option value="Ne">Neon</option>
+<option value="Np">Neptunium</option>
+<option value="Ni">Nickel</option>
+<option value="Nb">Niobium</option>
+<option value="N">Nitrogen</option>
+<option value="No">Nobelium</option>
+<option value="Os">Osmium</option>
+<option value="O">Oxygen</option>
+<option value="Pd">Palladium</option>
+<option value="P">Phosphorus</option>
+<option value="Pt">Platinum</option>
+<option value="Pu">Plutonium</option>
+<option value="Po">Polonium</option>
+<option value="K">Potassium</option>
+<option value="Pr">Praseodymium</option>
+<option value="Pm">Promethium</option>
+<option value="Pa">Protactinium</option>
+<option value="Ra">Radium</option>
+<option value="Rn">Radon</option>
+<option value="Re">Rhenium</option>
+<option value="Rh">Rhodium</option>
+<option value="Rg">Roentgenium</option>
+<option value="Rb">Rubidium</option>
+<option value="Ru">Ruthenium</option>
+<option value="Rf">Rutherfordium</option>
+<option value="Sm">Samarium</option>
+<option value="Sc">Scandium</option>
+<option value="Sg">Seaborgium</option>
+<option value="Se">Selenium</option>
+<option value="Si">Silicon</option>
+<option value="Ag">Silver</option>
+<option value="Na">Sodium</option>
+<option value="Sr">Strontium</option>
+<option value="S">Sulfur</option>
+<option value="Ta">Tantalum</option>
+<option value="Tc">Technetium</option>
+<option value="Te">Tellurium</option>
+<option value="Tb">Terbium</option>
+<option value="Tl">Thallium</option>
+<option value="Th">Thorium</option>
+<option value="Tm">Thulium</option>
+<option value="Sn">Tin</option>
+<option value="Ti">Titanium</option>
+<option value="W">Tungsten</option>
+<option value="Uuo">Ununoctium</option>
+<option value="Uup">Ununpentium</option>
+<option value="Uus">Ununseptium</option>
+<option value="Uut">Ununtrium</option>
+<option value="U">Uranium</option>
+<option value="V">Vanadium</option>
+<option value="Xe">Xenon</option>
+<option value="Yb">Ytterbium</option>
+<option value="Y">Yttrium</option>
+<option value="Zn">Zinc</option>
+<option value="Zr">Zirconium</option>
+
+
+</select>
+ <button onclick="Go(&#39;navbyname&#39;);">Find Selected Element</button>
+</div>
+
+</div>
+
+<div role="main">
+
+     <div class="alittletotheright"> 
+        <h1>Periodic Table</h1>
+
+
+
+        <h2>Key</h2>
+        <table summary="This table&#39;s cell shows how the info is organized for each element in the table below." id="key" border="1">
+        <tbody><tr class="main_groups"><td class="keycells" tabindex="-1" onfocus="MyOnFocus(0);" onblur="MyOnBlur(0);" onkeydown="return MyOnKeyPress(event,0);"><div><span class="name">Name</span><ul><li>Atomic #</li><li>Symbol</li><li><span class="nobr">Atomic Weight</span></li></ul></div></td></tr>
+        </tbody></table>
+     </div>
+
+
+
+        <h2>Main Periodic Table</h2>
+        <table id="pt" summary="Main Periodic Table" border="1">
+        <colgroup>
+            <col>
+            <col class="main_groups" span="2">
+            <col class="transition_metals" span="10">
+            <col class="main_groups" span="6">
+        </colgroup>
+        <!-- Table Head -->
+        <thead id="mythead"><tr id="toprow"><td rowspan="2" class="nb"><strong>Period</strong></td><th colspan="2" scope="col">Main Groups</th><th colspan="10" scope="col">Transition Metals</th><th colspan="6" scope="col">Main Groups</th></tr>
+
+
+
+        <!-- #### USUAL (NO UNMERGED VERSION) #### -->
+
+        
+
+        <!-- #### USUAL #### -->
+        <!-- Group Labels KEEP WHITE SPACE OUT OF HERE-->
+        <tr id="tr_american" style="/*display:none;*/"><th scope="col">1<span aria-hidden="false">A</span></th><th scope="col">2<span aria-hidden="false">A</span></th><th scope="col"><span>3B</span></th><th scope="col"><span>4B</span></th><th scope="col"><span>5B</span></th><th scope="col"><span>6B</span></th><th scope="col"><span>7B</span></th><th scope="col" colspan="3" class="group8b"><span>8B</span></th><th scope="col"><span>1B</span></th><th scope="col"><span>2B</span></th><th scope="col">3<span aria-hidden="false">A</span></th><th scope="col">4<span aria-hidden="false">A</span></th><th scope="col">5<span aria-hidden="false">A</span></th><th scope="col">6<span aria-hidden="false">A</span></th><th scope="col">7<span aria-hidden="false">A</span></th><th scope="col">8<span aria-hidden="false">A</span></th></tr>
+
+       <!-- #### USUAL #### -->
+
+        <!-- display none is just extra, removed using js dom -->
+        
+		
+		    <tr style="display:none;">
+            <th scope="col"><span>1</span></th>
+            <th scope="col"><span>2</span></th>
+
+           
+            <th scope="col"><span>3</span></th>
+            <th scope="col"><span>4</span></th>
+            <th scope="col"><span>5</span></th>
+            <th scope="col"><span>6</span></th>
+            <th scope="col"><span>7</span></th>
+
+            <th scope="col"><span>8</span></th>
+            <th scope="col"><span>9</span></th>
+            <th scope="col"><span>10</span></th>
+
+            <th scope="col"><span>11</span></th>
+            <th scope="col"><span>12</span></th>
+
+
+            <th scope="col"><span>13</span></th>
+            <th scope="col"><span>14</span></th>
+            <th scope="col"><span>15</span></th>
+            <th scope="col"><span>16</span></th>
+            <th scope="col"><span>17</span></th>
+            <th scope="col"><span>18</span></th>
+        </tr>
+
+
+        <!-- #### UNMERGED #### -->
+        <!-- Group Labels KEEP WHITE SPACE OUT OF HERE-->
+        
+
+
+
+        <!-- #### UNMERGED #### -->
+        <!-- display none is just extra, removed using js dom -->
+        
+
+
+
+        </thead>
+
+        <!-- Table Body -->
+
+        <tbody>
+
+
+
+
+
+
+
+        <!-- #### UNMERGED #### -->
+        <!-- Period 1 -->
+
+        
+
+       <!-- #### USUAL #### -->
+        <!-- Period 1 -->
+
+
+        <tr id="period1">   
+               <th scope="row" class="nb"><span class="screen_readers_only">Period</span> 1</th>   
+               <td class="keycells" id="H" tabindex="0" onfocus="MyOnFocus(3);" onblur="MyOnBlur(3);" onkeydown="return MyOnKeyPress(event,3);"><div>
+                   <span class="name">Hydrogen</span>
+                   <ul>
+                       <li>1</li>
+                       <li>H</li>
+                       <li>1.00794</li>
+                   </ul>
+               </div></td>
+
+               <!--
+ 
+               <td colspan="16" class="nb" id="firstempty">
+                   <p class="screen_readers_only">There are no elements in groups 2A through 7A in period 1.</p>
+               </td> 
+
+               -->
+
+               <td colspan="16" class="nb" id="firstempty">
+                   <p class="screen_readers_only">There are no elements in groups 2<span id="sentencespell5"><span aria-hidden="false">A</span></span> through 7<span id="sentencespell6"><span aria-hidden="false">A</span></span> in period 1.</p>
+               </td>
+
+               <td class="keycells" id="He" tabindex="-1" onfocus="MyOnFocus(4);" onblur="MyOnBlur(4);" onkeydown="return MyOnKeyPress(event,4);"><div>
+                   <span class="name">Helium</span>
+                   <ul>
+                       <li>2</li>
+                       <li class="keylis"><span aria-hidden="false">He</span></li>
+                       <li>4.00260</li>
+                   </ul>
+               </div></td> 
+        </tr>
+
+
+        <!-- #### UNMERGED #### -->
+        <!-- Period 2 -->
+
+        
+
+
+
+       <!-- #### USUAL #### -->
+        <!-- Period 2 -->
+
+
+        <tr id="period2">   
+               <th scope="row" class="nb"><span class="screen_readers_only">Period</span> 2</th>   
+               <td class="keycells" id="Li" tabindex="-1" onfocus="MyOnFocus(13);" onblur="MyOnBlur(13);" onkeydown="return MyOnKeyPress(event,13);"><div><span class="name">Lithium</span>
+                   <ul>
+                       <li>3</li>
+                       <li class="keylis"><span aria-hidden="false">Li</span></li>                       
+                       <li>6.941</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="Be" tabindex="-1" onfocus="MyOnFocus(14);" onblur="MyOnBlur(14);" onkeydown="return MyOnKeyPress(event,14);"><div><span class="name">Beryllium</span>
+                   <ul>
+                       <li>4</li>
+                       <li class="keylis"><span aria-hidden="false">Be</span></li>             
+                       <li>9.01218</li>
+                   </ul>
+               </div></td> 
+               <td colspan="10" class="nb">
+                   <p class="screen_readers_only">There are no elements in groups 1B-8B in period 2.</p>
+               </td> 
+
+               <td class="keycells" id="B" tabindex="-1" onfocus="MyOnFocus(15);" onblur="MyOnBlur(15);" onkeydown="return MyOnKeyPress(event,15);"><div><span class="name">Boron</span>
+                   <ul>
+                       <li>5</li>
+                       <li>B</li>
+                       
+                       <li>10.811</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="C" tabindex="-1" onfocus="MyOnFocus(16);" onblur="MyOnBlur(16);" onkeydown="return MyOnKeyPress(event,16);"><div><span class="name">Carbon</span>
+                   <ul>
+                       <li>6</li>
+                       <li>C</li>
+                       
+                       <li>12.0107</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="N" tabindex="-1" onfocus="MyOnFocus(17);" onblur="MyOnBlur(17);" onkeydown="return MyOnKeyPress(event,17);"><div><span class="name">Nitrogen</span>
+                   <ul>
+                       <li>7</li>
+                       <li>N</li>
+                       
+                       <li>14.0067</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="O" tabindex="-1" onfocus="MyOnFocus(18);" onblur="MyOnBlur(18);" onkeydown="return MyOnKeyPress(event,18);"><div><span class="name">Oxygen</span>
+                   <ul>
+                       <li>8</li>
+                       
+                       <li>O</li>
+                       <li>15.9994</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="F" tabindex="-1" onfocus="MyOnFocus(19);" onblur="MyOnBlur(19);" onkeydown="return MyOnKeyPress(event,19);"><div><span class="name">Fluorine</span>
+                   <ul>
+                       <li>9</li>
+                       
+                       <li>F</li>
+                       <li>18.9984</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="Ne" tabindex="-1" onfocus="MyOnFocus(20);" onblur="MyOnBlur(20);" onkeydown="return MyOnKeyPress(event,20);"><div><span class="name">Neon</span>
+                   <ul>
+                       <li>10</li>                       
+                       <li class="keylis"><span aria-hidden="false">Ne</span></li>             
+                       <li>20.1797</li>
+                   </ul>
+               </div></td> 
+        </tr>
+
+
+
+
+        <!-- #### UNMERGED #### -->
+        <!-- Period 3 -->
+
+        
+
+
+       <!-- #### USUAL #### -->
+        <!-- Period 3 -->
+
+        <tr id="period3">   
+               <th scope="row" class="nb"><span class="screen_readers_only">Period</span> 3</th>   
+               <td class="keycells" id="Na" tabindex="-1" onfocus="MyOnFocus(29);" onblur="MyOnBlur(29);" onkeydown="return MyOnKeyPress(event,29);"><div><span class="name">Sodium</span>
+                   <ul>
+                       <li>11</li>
+                       <li class="keylis"><span aria-hidden="false">Na</span></li>
+                       <li>22.9898</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="Mg" tabindex="-1" onfocus="MyOnFocus(30);" onblur="MyOnBlur(30);" onkeydown="return MyOnKeyPress(event,30);"><div><span class="name">Magnesium</span>
+                   <ul>
+                       <li>12</li>
+                       <li>Mg</li>
+                       <li>24.305</li>
+                   </ul>
+               </div></td> 
+               <td colspan="10" class="nb">
+                   <p class="screen_readers_only">There are no elements in groups 1B-8B in period 3.</p>
+               </td> 
+
+               <td class="keycells" id="Al" tabindex="-1" onfocus="MyOnFocus(31);" onblur="MyOnBlur(31);" onkeydown="return MyOnKeyPress(event,31);"><div><span class="name">Aluminum</span>
+                   <ul>
+                       <li>13</li>
+                       <li class="keylis"><span aria-hidden="false">Al</span></li>
+                       <li>26.9815</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="Si" tabindex="-1" onfocus="MyOnFocus(32);" onblur="MyOnBlur(32);" onkeydown="return MyOnKeyPress(event,32);"><div><span class="name">Silicon</span>
+                   <ul>
+                       <li>14</li>
+                       <li class="keylis"><span aria-hidden="false">Si</span></li>
+                       <li>28.0855</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="P" tabindex="-1" onfocus="MyOnFocus(33);" onblur="MyOnBlur(33);" onkeydown="return MyOnKeyPress(event,33);"><div><span class="name">Phosphorus</span>
+                   <ul>
+                       <li>15</li>
+                       <li>P</li>
+                       <li>30.9738</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="S" tabindex="-1" onfocus="MyOnFocus(34);" onblur="MyOnBlur(34);" onkeydown="return MyOnKeyPress(event,34);"><div><span class="name">Sulfur</span>
+                   <ul>
+                       <li>16</li>
+                       <li>S</li>
+                       <li>32.065</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="Cl" tabindex="-1" onfocus="MyOnFocus(35);" onblur="MyOnBlur(35);" onkeydown="return MyOnKeyPress(event,35);"><div><span class="name">Chlorine</span>
+                   <ul>
+                       <li>17</li>
+                       <li class="keylis"><span aria-hidden="false">Cl</span></li>
+                       <li>35.453</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="Ar" tabindex="-1" onfocus="MyOnFocus(36);" onblur="MyOnBlur(36);" onkeydown="return MyOnKeyPress(event,36);"><div><span class="name">Argon</span>
+                   <ul>
+                       <li>18</li>
+                       <li class="keylis"><span aria-hidden="false">Ar</span></li>
+                       <li>39.948</li>
+                   </ul>
+               </div></td> 
+        </tr>
+
+
+<!-- ### END OF UNMERGED CHANGES ### -->
+
+
+        <!-- Period 4 -->
+        <tr>   
+               <th scope="row" class="nb"><span class="screen_readers_only">Period</span> 4</th>   
+               <td class="keycells" id="K" tabindex="-1" onfocus="MyOnFocus(37);" onblur="MyOnBlur(37);" onkeydown="return MyOnKeyPress(event,37);"><div><span class="name">Potassium</span>
+                   <ul>
+                       <li>19</li>
+                       <li>K</li>
+                       <li>39.0983</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells" id="Ca" tabindex="-1" onfocus="MyOnFocus(38);" onblur="MyOnBlur(38);" onkeydown="return MyOnKeyPress(event,38);"><div><span class="name">Calcium</span>
+                   <ul>
+                       <li>20</li>
+                       <li class="keylis"><span aria-hidden="false">Ca</span></li>
+                       <li>40.078</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells transition_metals" id="Sc" tabindex="-1" onfocus="MyOnFocus(39);" onblur="MyOnBlur(39);" onkeydown="return MyOnKeyPress(event,39);"><div><span class="name">Scandium</span>
+                   <ul>
+                       <li>21</li>
+                       <li>Sc</li>
+                       <li>44.9559</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells transition_metals" id="Ti" tabindex="-1" onfocus="MyOnFocus(40);" onblur="MyOnBlur(40);" onkeydown="return MyOnKeyPress(event,40);"><div><span class="name">Titanium</span>
+                   <ul>
+                       <li>22</li>
+                       <li class="keylis"><span aria-hidden="false">Ti</span></li>
+                       <li>47.867</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells transition_metals" id="V" tabindex="-1" onfocus="MyOnFocus(41);" onblur="MyOnBlur(41);" onkeydown="return MyOnKeyPress(event,41);"><div><span class="name">Vanadium</span>
+                   <ul>
+                       <li>23</li>
+                       <li>V</li>
+                       <li>50.9415</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells transition_metals" id="Cr" tabindex="-1" onfocus="MyOnFocus(42);" onblur="MyOnBlur(42);" onkeydown="return MyOnKeyPress(event,42);"><div><span class="name">Chromium</span>
+                   <ul>
+                       <li>24</li>
+                       <li>Cr</li>
+                       <li>51.9961</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells transition_metals" id="Mn" tabindex="-1" onfocus="MyOnFocus(43);" onblur="MyOnBlur(43);" onkeydown="return MyOnKeyPress(event,43);"><div><span class="name">Manganese</span>
+                   <ul>
+                       <li>25</li>
+                       <li>Mn</li>
+                       <li>54.9380</li>
+                   </ul>
+               </div></td> 
+
+               <td class="group8b keycells" id="Fe" tabindex="-1" onfocus="MyOnFocus(44);" onblur="MyOnBlur(44);" onkeydown="return MyOnKeyPress(event,44);"><div><span class="name">Iron</span>
+                   <ul>
+                       <li>26</li>
+                       <li class="keylis"><span aria-hidden="false">Fe</span></li>
+                       <li>55.845</li>
+                   </ul>
+               </div></td> 
+               <td class="group8b keycells" id="Co" tabindex="-1" onfocus="MyOnFocus(45);" onblur="MyOnBlur(45);" onkeydown="return MyOnKeyPress(event,45);"><div><span class="name">Cobalt</span>
+                   <ul>
+                       <li>27</li>
+                       <li class="keylis"><span aria-hidden="false">Co</span></li>
+                       <li>58.9332</li>
+                   </ul>
+               </div></td> 
+
+               <td class="group8b keycells" id="Ni" tabindex="-1" onfocus="MyOnFocus(46);" onblur="MyOnBlur(46);" onkeydown="return MyOnKeyPress(event,46);"><div><span class="name">Nickel</span>
+                   <ul>
+                       <li>28</li>
+                       <li class="keylis"><span aria-hidden="false">Ni</span></li>
+                       <li>58.6934</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells transition_metals" id="Cu" tabindex="-1" onfocus="MyOnFocus(47);" onblur="MyOnBlur(47);" onkeydown="return MyOnKeyPress(event,47);"><div><span class="name">Copper</span>
+                   <ul>
+                       <li>29</li>
+                       <li class="keylis"><span aria-hidden="false">Cu</span></li>
+                       <li>63.546</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells transition_metals" id="Zn" tabindex="-1" onfocus="MyOnFocus(48);" onblur="MyOnBlur(48);" onkeydown="return MyOnKeyPress(event,48);"><div><span class="name">Zinc</span>
+                   <ul>
+                       <li>30</li>
+                       <li>Zn</li>
+                       <li>65.38</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="Ga" tabindex="-1" onfocus="MyOnFocus(49);" onblur="MyOnBlur(49);" onkeydown="return MyOnKeyPress(event,49);"><div><span class="name">Gallium</span>
+                   <ul>
+                       <li>31</li>
+                       <li class="keylis"><span aria-hidden="false">Ga</span></li>
+                       <li>69.723</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells" id="Ge" tabindex="-1" onfocus="MyOnFocus(50);" onblur="MyOnBlur(50);" onkeydown="return MyOnKeyPress(event,50);"><div><span class="name">Germanium</span>
+                   <ul>
+                       <li>32</li>
+                       <li class="keylis"><span aria-hidden="false">Ge</span></li>
+                       <li>72.63</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="As" tabindex="-1" onfocus="MyOnFocus(51);" onblur="MyOnBlur(51);" onkeydown="return MyOnKeyPress(event,51);"><div><span class="name">Arsenic</span>
+                   <ul>
+                       <li>33</li>
+                       <li class="keylis"><span aria-hidden="false">As</span></li>
+                       <li>74.9216</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells" id="Se" tabindex="-1" onfocus="MyOnFocus(52);" onblur="MyOnBlur(52);" onkeydown="return MyOnKeyPress(event,52);"><div><span class="name">Selenium</span>
+                   <ul>
+                       <li>34</li>
+                       <li class="keylis"><span aria-hidden="false">Se</span></li>
+                       <li>78.96</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="Br" tabindex="-1" onfocus="MyOnFocus(53);" onblur="MyOnBlur(53);" onkeydown="return MyOnKeyPress(event,53);"><div><span class="name">Bromine</span>
+                   <ul>
+                       <li>35</li>
+                       <li>Br</li>
+                       <li>79.904</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells" id="Kr" tabindex="-1" onfocus="MyOnFocus(54);" onblur="MyOnBlur(54);" onkeydown="return MyOnKeyPress(event,54);"><div><span class="name">Krypton</span>
+                   <ul>
+                       <li>36</li>
+                       <li>Kr</li>
+                       <li>83.798</li>
+                   </ul>
+               </div></td> 
+        </tr>
+
+
+        <!-- Period 5 -->
+        <tr>   
+               <th scope="row" class="nb"><span class="screen_readers_only">Period</span> 5</th>   
+               <td class="keycells" id="Rb" tabindex="-1" onfocus="MyOnFocus(55);" onblur="MyOnBlur(55);" onkeydown="return MyOnKeyPress(event,55);"><div><span class="name">Rubidium</span>
+                   <ul>
+                       <li>37</li>
+                       <li>Rb</li>
+                       <li>85.4678</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells" id="Sr" tabindex="-1" onfocus="MyOnFocus(56);" onblur="MyOnBlur(56);" onkeydown="return MyOnKeyPress(event,56);"><div><span class="name">Strontium</span>
+                   <ul>
+                       <li>38</li>
+                       <li class="keylis"><span aria-hidden="false">Sr</span></li>
+                       <li>87.62</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells transition_metals" id="Y" tabindex="-1" onfocus="MyOnFocus(57);" onblur="MyOnBlur(57);" onkeydown="return MyOnKeyPress(event,57);"><div><span class="name">Yttrium</span>
+                   <ul>
+                       <li>39</li>
+                       <li>Y</li>
+                       <li>88.9059</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells transition_metals" id="Zr" tabindex="-1" onfocus="MyOnFocus(58);" onblur="MyOnBlur(58);" onkeydown="return MyOnKeyPress(event,58);"><div><span class="name">Zirconium</span>
+                   <ul>
+                       <li>40</li>
+                       <li>Zr</li>
+                       <li>91.224</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells transition_metals" id="Nb" tabindex="-1" onfocus="MyOnFocus(59);" onblur="MyOnBlur(59);" onkeydown="return MyOnKeyPress(event,59);"><div><span class="name">Niobium</span>
+                   <ul>
+                       <li>41</li>
+                       <li>Nb</li>
+                       <li>92.9064</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells transition_metals" id="Mo" tabindex="-1" onfocus="MyOnFocus(60);" onblur="MyOnBlur(60);" onkeydown="return MyOnKeyPress(event,60);"><div><span class="name">Molybdenum</span>
+                   <ul>
+                       <li>42</li>
+                       <li class="keylis"><span aria-hidden="false">Mo</span></li>
+                       <li>95.96</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells transition_metals" id="Tc" tabindex="-1" onfocus="MyOnFocus(61);" onblur="MyOnBlur(61);" onkeydown="return MyOnKeyPress(event,61);"><div><span class="name">Technetium</span>
+                   <ul>
+                       <li>43</li>
+                       <li>Tc</li>
+                       <li>[98]</li>
+                   </ul>
+               </div></td> 
+
+               <td class="group8b keycells" id="Ru" tabindex="-1" onfocus="MyOnFocus(62);" onblur="MyOnBlur(62);" onkeydown="return MyOnKeyPress(event,62);"><div><span class="name">Ruthenium</span>
+                   <ul>
+                       <li>44</li>
+                       <li class="keylis"><span aria-hidden="false">Ru</span></li>
+                       <li>101.07</li>
+                   </ul>
+               </div></td> 
+               <td class="group8b keycells" id="Rh" tabindex="-1" onfocus="MyOnFocus(63);" onblur="MyOnBlur(63);" onkeydown="return MyOnKeyPress(event,63);"><div><span class="name">Rhodium</span>
+                   <ul>
+                       <li>45</li>
+                       <li>Rh</li>
+                       <li>102.906</li>
+                   </ul>
+               </div></td> 
+
+               <td class="group8b keycells" id="Pd" tabindex="-1" onfocus="MyOnFocus(64);" onblur="MyOnBlur(64);" onkeydown="return MyOnKeyPress(event,64);"><div><span class="name">Palladium</span>
+                   <ul>
+                       <li>46</li>
+                       <li>Pd</li>
+                       <li>106.42</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells transition_metals" id="Ag" tabindex="-1" onfocus="MyOnFocus(65);" onblur="MyOnBlur(65);" onkeydown="return MyOnKeyPress(event,65);"><div><span class="name">Silver</span>
+                   <ul>
+                       <li>47</li>
+                       <li class="keylis"><span aria-hidden="false">Ag</span></li>
+                       <li>107.868</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells transition_metals" id="Cd" tabindex="-1" onfocus="MyOnFocus(66);" onblur="MyOnBlur(66);" onkeydown="return MyOnKeyPress(event,66);"><div><span class="name">Cadmium</span>
+                   <ul>
+                       <li>48</li>
+                       <li>Cd</li>
+                       <li>112.411</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="In" tabindex="-1" onfocus="MyOnFocus(67);" onblur="MyOnBlur(67);" onkeydown="return MyOnKeyPress(event,67);"><div><span class="name">Indium</span>
+                   <ul>
+                       <li>49</li>
+                       <li class="keylis"><span aria-hidden="false">In</span></li>
+                       <li>114.818</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells" id="Sn" tabindex="-1" onfocus="MyOnFocus(68);" onblur="MyOnBlur(68);" onkeydown="return MyOnKeyPress(event,68);"><div><span class="name">Tin</span>
+                   <ul>
+                       <li>50</li>
+                       <li>Sn</li>
+                       <li>118.710</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="Sb" tabindex="-1" onfocus="MyOnFocus(69);" onblur="MyOnBlur(69);" onkeydown="return MyOnKeyPress(event,69);"><div><span class="name">Antimony</span>
+                   <ul>
+                       <li>51</li>
+                       <li>Sb</li>
+                       <li>121.760</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells" id="Te" tabindex="-1" onfocus="MyOnFocus(70);" onblur="MyOnBlur(70);" onkeydown="return MyOnKeyPress(event,70);"><div><span class="name">Tellurium</span>
+                   <ul>
+                       <li>52</li>
+                       <li class="keylis"><span aria-hidden="false">Te</span></li>
+                       <li>127.60</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="I" tabindex="-1" onfocus="MyOnFocus(71);" onblur="MyOnBlur(71);" onkeydown="return MyOnKeyPress(event,71);"><div><span class="name">Iodine</span>
+                   <ul>
+                       <li>53</li>
+                       <li>I</li>
+                       <li>126.904</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells" id="Xe" tabindex="-1" onfocus="MyOnFocus(72);" onblur="MyOnBlur(72);" onkeydown="return MyOnKeyPress(event,72);"><div><span class="name">Xenon</span>
+                   <ul>
+                       <li>54</li>
+                       <li class="keylis"><span aria-hidden="false">Xe</span></li>
+                       <li>131.293</li>
+                   </ul>
+               </div></td> 
+
+        </tr>
+
+
+
+        <!-- Period 6 -->
+        <tr>   
+               <th scope="row" class="nb"><span class="screen_readers_only">Period</span> 6</th>   
+               <td class="keycells" id="Cs" tabindex="-1" onfocus="MyOnFocus(73);" onblur="MyOnBlur(73);" onkeydown="return MyOnKeyPress(event,73);"><div><span class="name">Cesium</span>
+                   <ul>
+                       <li>55</li>
+                       <li><span>Cs</span></li>
+                       <li>132.905</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells" id="Ba" tabindex="-1" onfocus="MyOnFocus(74);" onblur="MyOnBlur(74);" onkeydown="return MyOnKeyPress(event,74);"><div><span class="name">Barium</span>
+                   <ul>
+                       <li>56</li>
+                       <li class="keylis"><span aria-hidden="false">Ba</span></li>
+                       <li>137.327</li>
+                   </ul>
+               </div></td> 
+
+               <td class="button_cell">
+                     <button onclick="document.getElementById(&#39;La&#39;).focus();" id="lcell" onfocus="MyOnFocus(75);" onblur="MyOnBlur(75);" onkeydown="return MyOnKeyPress(event,75);"><div class="button_div">
+                         <span class="series_name">Lanthanides</span>
+                         <span class="range">57 - 71</span>
+                     </div></button>
+     
+
+               <!-- link did not work on Mac Safari, skip link bug much like is common in IE, and FF, not in taborder, a href="#La" tabindex="0"--><!--/a-->
+               </td> 
+
+               <td class="keycells transition_metals" id="Hf" tabindex="-1" onfocus="MyOnFocus(76);" onblur="MyOnBlur(76);" onkeydown="return MyOnKeyPress(event,76);"><div><span class="name">Hafnium</span>
+                   <ul>
+                       <li>72</li>
+                       <li>Hf</li>
+                       <li>178.49</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells transition_metals" id="Ta" tabindex="-1" onfocus="MyOnFocus(77);" onblur="MyOnBlur(77);" onkeydown="return MyOnKeyPress(event,77);"><div><span class="name">Tantalum</span>
+                   <ul>
+                       <li>73</li>
+                       <li class="keylis"><span aria-hidden="false">Ta</span></li>
+                       <li>180.949</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells transition_metals" id="W" tabindex="-1" onfocus="MyOnFocus(78);" onblur="MyOnBlur(78);" onkeydown="return MyOnKeyPress(event,78);"><div><span class="name">Tungsten</span>
+                   <ul>
+                       <li>74</li>
+                       <li>W</li>
+                       <li>183.84</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells transition_metals" id="Re" tabindex="-1" onfocus="MyOnFocus(79);" onblur="MyOnBlur(79);" onkeydown="return MyOnKeyPress(event,79);"><div><span class="name">Rhenium</span>
+                   <ul>
+                       <li>75</li>
+                       <li class="keylis"><span aria-hidden="false">Re</span></li>
+                       <li>186.207</li>
+                   </ul>
+               </div></td> 
+
+               <td class="group8b keycells" id="Os" tabindex="-1" onfocus="MyOnFocus(80);" onblur="MyOnBlur(80);" onkeydown="return MyOnKeyPress(event,80);"><div><span class="name">Osmium</span>
+                   <ul>
+                       <li>76</li>
+                       <li class="keylis"><span aria-hidden="false">Os</span></li>
+                       <li>190.23</li>
+                   </ul>
+               </div></td> 
+               <td class="group8b keycells" id="Ir" tabindex="-1" onfocus="MyOnFocus(81);" onblur="MyOnBlur(81);" onkeydown="return MyOnKeyPress(event,81);"><div><span class="name">Iridium</span>
+                   <ul>
+                       <li>77</li>
+                       <li class="keylis"><span aria-hidden="false">Ir</span></li>
+                       <li>192.217</li>
+                   </ul>
+               </div></td> 
+
+               <td class="group8b keycells" id="Pt" tabindex="-1" onfocus="MyOnFocus(82);" onblur="MyOnBlur(82);" onkeydown="return MyOnKeyPress(event,82);"><div><span class="name">Platinum</span>
+                   <ul>
+                       <li>78</li>
+                       <li class="keylis"><span aria-hidden="false">Pt</span></li>
+                       <li>195.084</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells transition_metals" id="Au" tabindex="-1" onfocus="MyOnFocus(83);" onblur="MyOnBlur(83);" onkeydown="return MyOnKeyPress(event,83);"><div><span class="name">Gold</span>
+                   <ul>
+                       <li>79</li>
+                       <li class="keylis"><span aria-hidden="false">Au</span></li>
+                       <li>196.967</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells transition_metals" id="Hg" tabindex="-1" onfocus="MyOnFocus(84);" onblur="MyOnBlur(84);" onkeydown="return MyOnKeyPress(event,84);"><div><span class="name">Mercury</span>
+                   <ul>
+                       <li>80</li>
+                       <li>Hg</li>
+                       <li>200.59</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="Tl" tabindex="-1" onfocus="MyOnFocus(85);" onblur="MyOnBlur(85);" onkeydown="return MyOnKeyPress(event,85);"><div><span class="name">Thallium</span>
+                   <ul>
+                       <li>81</li>
+                       <li>Tl</li>
+                       <li>204.383</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells" id="Pb" tabindex="-1" onfocus="MyOnFocus(86);" onblur="MyOnBlur(86);" onkeydown="return MyOnKeyPress(event,86);"><div><span class="name">Lead</span>
+                   <ul>
+                       <li>82</li>
+                       <li>Pb</li>
+                       <li>207.2</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="Bi" tabindex="-1" onfocus="MyOnFocus(87);" onblur="MyOnBlur(87);" onkeydown="return MyOnKeyPress(event,87);"><div><span class="name">Bismuth</span>
+                   <ul>
+                       <li>83</li>
+                       <li class="keylis"><span aria-hidden="false">Bi</span></li>
+                       <li>208.980</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells" id="Po" tabindex="-1" onfocus="MyOnFocus(88);" onblur="MyOnBlur(88);" onkeydown="return MyOnKeyPress(event,88);"><div><span class="name">Polonium</span>
+                   <ul>
+                       <li>84</li>
+                       <li class="keylis"><span aria-hidden="false">Po</span></li>
+                       <li>[210]</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="At" tabindex="-1" onfocus="MyOnFocus(89);" onblur="MyOnBlur(89);" onkeydown="return MyOnKeyPress(event,89);"><div><span class="name">Astatine</span>
+                   <ul>
+                       <li>85</li>
+                       <li class="keylis"><span aria-hidden="false">At</span></li>
+                       <li>[210]</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells" id="Rn" tabindex="-1" onfocus="MyOnFocus(90);" onblur="MyOnBlur(90);" onkeydown="return MyOnKeyPress(event,90);"><div><span class="name">Radon</span>
+                   <ul>
+                       <li>86</li>
+                       <li>Rn</li>
+                       <li>[222]</li>
+                   </ul>
+               </div></td> 
+
+        </tr>
+
+        <!-- Period 7 -->
+        <tr>   
+               <th scope="row" class="nb"><span class="screen_readers_only">Period</span> 7</th>   
+               <td class="keycells" id="Fr" tabindex="-1" onfocus="MyOnFocus(91);" onblur="MyOnBlur(91);" onkeydown="return MyOnKeyPress(event,91);"><div><span class="name">Francium</span>
+                   <ul>
+                       <li>87</li>
+                       <li>Fr</li>
+                       <li>[223]</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells" id="Ra" tabindex="-1" onfocus="MyOnFocus(92);" onblur="MyOnBlur(92);" onkeydown="return MyOnKeyPress(event,92);"><div><span class="name">Radium</span>
+                   <ul>
+                       <li>88</li>
+                       <li class="keylis"><span aria-hidden="false">Ra</span></li>
+                       <li>[226]</li>
+                   </ul>
+               </div></td> 
+
+               <td class="button_cell">
+                   <button id="acell" onclick="document.getElementById(&#39;Ac&#39;).focus();" onfocus="MyOnFocus(93);" onblur="MyOnBlur(93);" onkeydown="return MyOnKeyPress(event,93);"><div class="button_div">
+                        <span class="series_name">Actinides</span>
+                        <span class="range">89 - 103</span>
+                   </div></button>
+
+                  <!-- link did not work on Mac Safari, skip link bug much like is common in IE, and FF, a href="#Ac" tabindex="0" this was when inside a button-like table cell--><!--/a-->
+               </td> 
+
+               <td class="keycells transition_metals" id="Rf" tabindex="-1" onfocus="MyOnFocus(94);" onblur="MyOnBlur(94);" onkeydown="return MyOnKeyPress(event,94);"><div><span class="name">Rutherfordium</span>
+                   <ul>
+                       <li>104</li>
+                       <li>Rf</li>
+                       <li>[261]</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells transition_metals" id="Db" tabindex="-1" onfocus="MyOnFocus(95);" onblur="MyOnBlur(95);" onkeydown="return MyOnKeyPress(event,95);"><div><span class="name">Dubnium</span>
+                   <ul>
+                       <li>105</li>
+                       <li>Db</li>
+                       <li>[262]</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells transition_metals" id="Sg" tabindex="-1" onfocus="MyOnFocus(96);" onblur="MyOnBlur(96);" onkeydown="return MyOnKeyPress(event,96);"><div><span class="name">Seaborgium</span>
+                   <ul>
+                       <li>106</li>
+                       <li>Sg</li>
+                       <li>[266]</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells transition_metals" id="Bh" tabindex="-1" onfocus="MyOnFocus(97);" onblur="MyOnBlur(97);" onkeydown="return MyOnKeyPress(event,97);"><div><span class="name">Bohrium</span>
+                   <ul>
+                       <li>107</li>
+                       <li>Bh</li>
+                       <li>[264]</li>
+                   </ul>
+               </div></td> 
+
+               <td class="group8b keycells" id="Hs" tabindex="-1" onfocus="MyOnFocus(98);" onblur="MyOnBlur(98);" onkeydown="return MyOnKeyPress(event,98);"><div><span class="name">Hassium</span>
+                   <ul>
+                       <li>108</li>
+                       <li>Hs</li>
+                       <li>[269]</li>
+                   </ul>
+               </div></td> 
+               <td class="group8b keycells" id="Mt" tabindex="-1" onfocus="MyOnFocus(99);" onblur="MyOnBlur(99);" onkeydown="return MyOnKeyPress(event,99);"><div><span class="name">Meitnerium</span>
+                   <ul>
+                       <li>109</li>
+                       <li>Mt</li>
+                       <li>[268]</li>
+                   </ul>
+               </div></td> 
+
+               <td class="group8b keycells" id="Ds" tabindex="-1" onfocus="MyOnFocus(100);" onblur="MyOnBlur(100);" onkeydown="return MyOnKeyPress(event,100);"><div><span class="name">Darmstadtium</span>
+                   <ul>
+                       <li>110</li>
+                       <li>Ds</li>
+                       <li>[271]</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells transition_metals" id="Rg" tabindex="-1" onfocus="MyOnFocus(101);" onblur="MyOnBlur(101);" onkeydown="return MyOnKeyPress(event,101);"><div><span class="name">Roentgenium</span>
+                   <ul>
+                       <li>111</li>
+                       <li>Rg</li>
+                       <li>[272]</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells transition_metals" id="Cn" tabindex="-1" onfocus="MyOnFocus(102);" onblur="MyOnBlur(102);" onkeydown="return MyOnKeyPress(event,102);"><div><span class="name">Copernicium</span>
+                   <ul>
+                       <li>112</li>
+                       <li>Cn</li>
+                       <li>[285]</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="Uut" tabindex="-1" onfocus="MyOnFocus(103);" onblur="MyOnBlur(103);" onkeydown="return MyOnKeyPress(event,103);"><div><span class="name">Nihonium</span>
+                   <ul>
+                       <li>113</li>
+                       <li class="keylis"><span aria-hidden="false">Nh</span></li>
+                       <li>[286]</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells" id="Fl" tabindex="-1" onfocus="MyOnFocus(104);" onblur="MyOnBlur(104);" onkeydown="return MyOnKeyPress(event,104);"><div><span class="name">Flerovium</span>
+                   <ul>
+                       <li>114</li>
+                       <li>Fl</li>
+                       <li>[289]</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="Uup" tabindex="-1" onfocus="MyOnFocus(105);" onblur="MyOnBlur(105);" onkeydown="return MyOnKeyPress(event,105);"><div><span class="name">Moscovium</span>
+                   <ul>
+                       <li>115</li>
+                       <li class="keylis"><span aria-hidden="false">Mc</span></li>
+                       <li>[288]</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells" id="Lv" tabindex="-1" onfocus="MyOnFocus(106);" onblur="MyOnBlur(106);" onkeydown="return MyOnKeyPress(event,106);"><div><span class="name">Livermorium</span>
+                   <ul>
+                       <li>116</li>
+                       <li>Lv</li>
+                       <li>[293]</li>
+                   </ul>
+               </div></td> 
+               <td class="keycells" id="Uus" tabindex="-1" onfocus="MyOnFocus(107);" onblur="MyOnBlur(107);" onkeydown="return MyOnKeyPress(event,107);"><div><span class="name">Tennessine</span>
+                   <ul>
+                       <li>117</li>
+                       <li class="keylis"><span aria-hidden="false">Ts</span></li>
+                       <li>[294]</li>
+                   </ul>
+               </div></td> 
+
+               <td class="keycells" id="Uuo" tabindex="-1" onfocus="MyOnFocus(108);" onblur="MyOnBlur(108);" onkeydown="return MyOnKeyPress(event,108);"><div><span class="name">Oganesson</span>
+                   <ul>
+                       <li>118</li>
+                       <li class="keylis"><span aria-hidden="false">Og</span></li>
+                       <li>[294]</li>
+                   </ul>
+               </div></td> 
+
+        </tr>
+
+        </tbody>
+
+        </table>
+
+
+    <h2>Lanthanide &amp; Actinide Series</h2>
+        <table id="la" summary="Lanthanide &amp; Actinide Table" border="1">
+
+        <!-- Lanthanide Period 6 -->
+        <tbody><tr class="lanthanides">   
+               <th scope="row" class="nb"><span class="screen_readers_only">Period</span> 6</th>   
+               <th scope="row" class="nb">Lanthanides</th> 
+  
+               <td class="lanthanides keycells" id="La" tabindex="0" onfocus="MyOnFocus(109);" onblur="MyOnBlur(109);" onkeydown="return MyOnKeyPress(event,109);"><div><span class="name">Lanthanum</span>
+                   <ul>
+                       <li>57</li>
+                       <li class="keylis"><span aria-hidden="false">La</span></li>
+                       <li>138.905</li>
+                   </ul>
+               </div></td> 
+
+               <td class="lanthanides keycells" id="Ce" tabindex="-1" onfocus="MyOnFocus(110);" onblur="MyOnBlur(110);" onkeydown="return MyOnKeyPress(event,110);"><div><span class="name">Cerium</span>
+                   <ul>
+                       <li>58</li>
+                       <li class="keylis"><span aria-hidden="false">Ce</span></li>
+                       <li>140.116</li>
+                   </ul>
+               </div></td> 
+
+               <td class="lanthanides keycells" id="Pr" tabindex="-1" onfocus="MyOnFocus(111);" onblur="MyOnBlur(111);" onkeydown="return MyOnKeyPress(event,111);"><div><span class="name">Praseodymium</span>
+                   <ul>
+                       <li>59</li>
+                       <li>Pr</li>
+                       <li>140.908</li>
+                   </ul>
+               </div></td> 
+               <td class="lanthanides keycells" id="Nd" tabindex="-1" onfocus="MyOnFocus(112);" onblur="MyOnBlur(112);" onkeydown="return MyOnKeyPress(event,112);"><div><span class="name">Neodymium</span>
+                   <ul>
+                       <li>60</li>
+                       <li>Nd</li>
+                       <li>144.242</li>
+                   </ul>
+               </div></td> 
+
+               <td class="lanthanides keycells" id="Pm" tabindex="-1" onfocus="MyOnFocus(113);" onblur="MyOnBlur(113);" onkeydown="return MyOnKeyPress(event,113);"><div><span class="name">Promethium</span>
+                   <ul>
+                       <li>61</li>
+                       <li>Pm</li>
+                       <li>[145]</li>
+                   </ul>
+               </div></td> 
+               <td class="lanthanides keycells" id="Sm" tabindex="-1" onfocus="MyOnFocus(114);" onblur="MyOnBlur(114);" onkeydown="return MyOnKeyPress(event,114);"><div><span class="name">Samarium</span>
+                   <ul>
+                       <li>62</li>
+                       <li>Sm</li>
+                       <li>150.36</li>
+                   </ul>
+               </div></td> 
+
+               <td class="lanthanides keycells" id="Eu" tabindex="-1" onfocus="MyOnFocus(115);" onblur="MyOnBlur(115);" onkeydown="return MyOnKeyPress(event,115);"><div><span class="name">Europium</span>
+                   <ul>
+                       <li>63</li>
+                       <li class="keylis"><span aria-hidden="false">Eu</span></li>
+                       <li>151.964</li>
+                   </ul>
+               </div></td> 
+               <td class="lanthanides keycells" id="Gd" tabindex="-1" onfocus="MyOnFocus(116);" onblur="MyOnBlur(116);" onkeydown="return MyOnKeyPress(event,116);"><div><span class="name">Gadolinium</span>
+                   <ul>
+                       <li>64</li>
+                       <li>Gd</li>
+                       <li>157.25</li>
+                   </ul>
+               </div></td> 
+
+               <td class="lanthanides keycells" id="Tb" tabindex="-1" onfocus="MyOnFocus(117);" onblur="MyOnBlur(117);" onkeydown="return MyOnKeyPress(event,117);"><div><span class="name">Terbium</span>
+                   <ul>
+                       <li>65</li>
+                       <li>Tb</li>
+                       <li>158.925</li>
+                   </ul>
+               </div></td> 
+               <td class="lanthanides keycells" id="Dy" tabindex="-1" onfocus="MyOnFocus(118);" onblur="MyOnBlur(118);" onkeydown="return MyOnKeyPress(event,118);"><div><span class="name">Dysprosium</span>
+                   <ul>
+                       <li>66</li>
+                       <li class="keylis"><span aria-hidden="false">Dy</span></li>
+                       <li>162.500</li>
+                   </ul>
+               </div></td> 
+
+               <td class="lanthanides keycells" id="Ho" tabindex="-1" onfocus="MyOnFocus(119);" onblur="MyOnBlur(119);" onkeydown="return MyOnKeyPress(event,119);"><div><span class="name">Holmium</span>
+                   <ul>
+                       <li>67</li>
+                       <li class="keylis"><span aria-hidden="false">Ho</span></li>
+                       <li>164.930</li>
+                   </ul>
+               </div></td> 
+               <td class="lanthanides keycells" id="Er" tabindex="-1" onfocus="MyOnFocus(120);" onblur="MyOnBlur(120);" onkeydown="return MyOnKeyPress(event,120);"><div><span class="name">Erbium</span>
+                   <ul>
+                       <li>68</li>
+                       <li class="keylis"><span aria-hidden="false">Er</span></li>
+                       <li>167.259</li>
+                   </ul>
+               </div></td> 
+
+               <td class="lanthanides keycells" id="Tm" tabindex="-1" onfocus="MyOnFocus(121);" onblur="MyOnBlur(121);" onkeydown="return MyOnKeyPress(event,121);"><div><span class="name">Thulium</span>
+                   <ul>
+                       <li>69</li>
+                       <li>Tm</li>
+                       <li>168.934</li>
+                   </ul>
+               </div></td> 
+               <td class="lanthanides keycells" id="Yb" tabindex="-1" onfocus="MyOnFocus(122);" onblur="MyOnBlur(122);" onkeydown="return MyOnKeyPress(event,122);"><div><span class="name">Ytterbium</span>
+                   <ul>
+                       <li>70</li>
+                       <li class="keylis"><span aria-hidden="false">Yb</span></li>
+                       <li>173.054</li>
+                   </ul>
+               </div></td> 
+
+               <td class="lanthanides keycells" id="Lu" tabindex="-1" onfocus="MyOnFocus(123);" onblur="MyOnBlur(123);" onkeydown="return MyOnKeyPress(event,123);"><div><span class="name">Lutetium</span>
+                   <ul>
+                       <li>71</li>
+                       <li class="keylis"><span aria-hidden="false">Lu</span></li>
+                       <li>174.967</li>
+                   </ul>
+               </div></td> 
+               <td>
+                    <!-- <a href="#lcell" onfocus="showOnFocus('return_l');" onblur="hideOnBlur('return_l');">Return to Lanthanides in main table</a>-->
+                    <button onclick="document.getElementById(&#39;lcell&#39;).focus();" onfocus="showOnFocus(&#39;return_l&#39;);" onblur="hideOnBlur(&#39;return_l&#39;);" id="return_l" class="screen_readers_only">Return to Lanthanides in main table</button>
+               </td> 
+
+        </tr>
+
+        <!-- Actinide Period 7 -->
+        <tr class="actinides">   
+               <th scope="row" class="nb"><span class="screen_readers_only">Period</span> 7</th>   
+
+               <th scope="row" class="nb">Actinides</th>
+               <td class="actinides keycells" id="Ac" tabindex="-1" onfocus="MyOnFocus(124);" onblur="MyOnBlur(124);" onkeydown="return MyOnKeyPress(event,124);"><div><span class="name">Actinium</span>
+                   <ul>
+                       <li>89</li>
+                       <li class="keylis"><span aria-hidden="false">Ac</span></li>
+                       <li>[227.03]</li>
+                   </ul>
+               </div></td> 
+
+               <td class="actinides keycells" id="Th" tabindex="-1" onfocus="MyOnFocus(125);" onblur="MyOnBlur(125);" onkeydown="return MyOnKeyPress(event,125);"><div><span class="name">Thorium</span>
+                   <ul>
+                       <li>90</li>
+                       <li>Th</li>
+                       <li>[232.038]</li>
+                   </ul>
+               </div></td> 
+
+               <td class="actinides keycells" id="Pa" tabindex="-1" onfocus="MyOnFocus(126);" onblur="MyOnBlur(126);" onkeydown="return MyOnKeyPress(event,126);"><div><span class="name">Protactinium</span>
+                   <ul>
+                       <li>91</li>
+                       <li class="keylis"><span aria-hidden="false">Pa</span></li>
+                       <li>[231.036]</li>
+                   </ul>
+               </div></td> 
+               <td class="actinides keycells" id="U" tabindex="-1" onfocus="MyOnFocus(127);" onblur="MyOnBlur(127);" onkeydown="return MyOnKeyPress(event,127);"><div><span class="name">Uranium</span>
+                   <ul>
+                       <li>92</li>
+                       <li>U</li>
+                       <li>[238.03]</li>
+                   </ul>
+               </div></td> 
+
+               <td class="actinides keycells" id="Np" tabindex="-1" onfocus="MyOnFocus(128);" onblur="MyOnBlur(128);" onkeydown="return MyOnKeyPress(event,128);"><div><span class="name">Neptunium</span>
+                   <ul>
+                       <li>93</li>
+                       <li>Np</li>
+                       <li>[237.05]</li>
+                   </ul>
+               </div></td> 
+               <td class="actinides keycells" id="Pu" tabindex="-1" onfocus="MyOnFocus(129);" onblur="MyOnBlur(129);" onkeydown="return MyOnKeyPress(event,129);"><div><span class="name">Plutonium</span>
+                   <ul>
+                       <li>94</li>
+                       <li class="keylis"><span aria-hidden="false">Pu</span></li>
+                       <li>[244.06]</li>
+                   </ul>
+               </div></td> 
+
+               <td class="actinides keycells" id="Am" tabindex="-1" onfocus="MyOnFocus(130);" onblur="MyOnBlur(130);" onkeydown="return MyOnKeyPress(event,130);"><div><span class="name">Americium</span>
+                   <ul>
+                       <li>95</li>
+                       <li class="keylis"><span aria-hidden="false">Am</span></li>
+                       <li>[243.06]</li>
+                   </ul>
+               </div></td> 
+               <td class="actinides keycells" id="Cm" tabindex="-1" onfocus="MyOnFocus(131);" onblur="MyOnBlur(131);" onkeydown="return MyOnKeyPress(event,131);"><div><span class="name">Curium</span>
+                   <ul>
+                       <li>96</li>
+                       <li>Cm</li>
+                       <li>[247.07]</li>
+                   </ul>
+               </div></td> 
+
+               <td class="actinides keycells" id="Bk" tabindex="-1" onfocus="MyOnFocus(132);" onblur="MyOnBlur(132);" onkeydown="return MyOnKeyPress(event,132);"><div><span class="name">Berkelium</span>
+                   <ul>
+                       <li>97</li>
+                       <li>Bk</li>
+                       <li>[247.07]</li>
+                   </ul>
+               </div></td> 
+               <td class="actinides keycells" id="Cf" tabindex="-1" onfocus="MyOnFocus(133);" onblur="MyOnBlur(133);" onkeydown="return MyOnKeyPress(event,133);"><div><span class="name">Californium</span>
+                   <ul>
+                       <li>98</li>
+                       <li>Cf</li>
+                       <li>[251.08]</li>
+                   </ul>
+               </div></td> 
+
+               <td class="actinides keycells" id="Es" tabindex="-1" onfocus="MyOnFocus(134);" onblur="MyOnBlur(134);" onkeydown="return MyOnKeyPress(event,134);"><div><span class="name">Einsteinium</span>
+                   <ul>
+                       <li>99</li>
+                       <li class="keylis"><span aria-hidden="false">Es</span></li>
+                       <li>[252.08]</li>
+                   </ul>
+               </div></td> 
+               <td class="actinides keycells" id="Fm" tabindex="-1" onfocus="MyOnFocus(135);" onblur="MyOnBlur(135);" onkeydown="return MyOnKeyPress(event,135);"><div><span class="name">Fermium</span>
+                   <ul>
+                       <li>100</li>
+                       <li>Fm</li>
+                       <li>[257.10]</li>
+                   </ul>
+               </div></td> 
+
+               <td class="actinides keycells" id="Md" tabindex="-1" onfocus="MyOnFocus(136);" onblur="MyOnBlur(136);" onkeydown="return MyOnKeyPress(event,136);"><div><span class="name">Mendelevium</span>
+                   <ul>
+                       <li>101</li>
+                       <li>Md</li>
+                       <li>[258.10]</li>
+                   </ul>
+               </div></td> 
+               <td class="actinides keycells" id="No" tabindex="-1" onfocus="MyOnFocus(137);" onblur="MyOnBlur(137);" onkeydown="return MyOnKeyPress(event,137);"><div><span class="name">Nobelium</span>
+                   <ul>
+                       <li>102</li>
+                       <li class="keylis"><span aria-hidden="false">No</span></li>
+                       <li>[259.10]</li>
+                   </ul>
+               </div></td> 
+
+               <td class="actinides keycells" id="Lr" tabindex="-1" onfocus="MyOnFocus(138);" onblur="MyOnBlur(138);" onkeydown="return MyOnKeyPress(event,138);"><div><span class="name">Lawrencium</span>
+                   <ul>
+                       <li>103</li>
+                       <li>Lr</li>
+                       <li>[262.11]</li>
+                   </ul>
+               </div></td> 
+
+               <td>
+                    <!-- no go on Mac, see first 2 links <a href="#acell" onfocus="showOnFocus('return_a');" onblur="hideOnBlur('return_a');">Return to Actinides in main table</a> -->
+                    <button onclick="document.getElementById(&#39;acell&#39;).focus();" onfocus="showOnFocus(&#39;return_a&#39;);" onblur="hideOnBlur(&#39;return_a&#39;);" id="return_a" class="screen_readers_only">Return to Actinides in main table</button>
+               </td> 
+
+        </tr>
+
+        </tbody>
+
+        </table>
+
+         <!-- styles have to be inline for drag -->
+        <div id="forcentering">
+        <h2 class="screen_readers_only">Enlarged View</h2>
+        
+        <!-- don't add space between table tr and td -->
+        <table id="positioning_div" style="position: relative; left: 1px; cursor: move; top: 0px;" summary="This table&#39;s cell contains a magnified view of the table cell that has focus." border="1" tabindex="0" onfocus="beginMove();" onblur="endMove();" onkeydown="return MoveOrChangeSteps(event,scalediv);" onmouseup="scalediv.focus();" class="nofocus"><tbody><tr class="main_groups"></tr></tbody></table>
+        </div>
+</div>
+
+<div role="region" aria-label="Options, including Accessibility Options">
+        <h2>Options</h2>
+      
+        <form id="myform3" style="padding:10px;margin:10px;">
+              <fieldset style="width:40em;">
+                    <legend style="font-weight:bold;color:black;">Group labeling convention</legend>
+                    <input type="radio" name="glc" id="american" checked="checked" onclick="tramerican();"><label for="american">American convention</label><br>
+                    <input type="radio" name="glc" id="IUPAC" onclick="other();"><label for="IUPAC"><abbr title="International Union of Pure and Applied Chemistry ">IUPAC</abbr> convention</label><br>
+ 
+
+
+              </fieldset>
+        </form>
+
+
+        <form id="myform5" style="padding:10px;margin:10px;">
+           <fieldset style="width:40em;">
+                    <legend style="font-weight:bold;color:black;">Accessibility Options</legend>
+                    <input type="checkbox" checked="checked" id="spellout" name="symbols" onclick="spellOut();"> <label for="spellout">In Screen Readers (text to speech programs) spell symbols (for example, N Ay)</label>
+                    <br><input type="checkbox" id="unmerge" name="unmerge" onclick="unmergeForVO();"> <label for="unmerge">Simplify table layout by showing table without combined table cells. (Recommended when using VoiceOver, which doesn't support combined cells.)</label>
+           </fieldset> 
+       </form>
+        
+
+
+</div>
+
+    <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     </pre>
+
+<!--
+
+tabindex="-1" was needed on the targets of the inpage links JAWS 13 FF 20
+
+
+
+-->
+
+<!--
+    Developed by the Pearson Accessibility Solutions Team
+    Send questions or bug reports to accessibility@pearson.com
+-->
+
+    
+</body></html>
